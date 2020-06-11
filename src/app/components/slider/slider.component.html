@@ -1,0 +1,71 @@
+ <!-- start of hero -->
+ <section class="hero-slider hero-style-2">
+    <div class="swiper-container" [swiper]="config"  style="background-color: slategrey;">
+        <div class="swiper-wrapper" >
+            
+            <div class="swiper-slide" *ngFor="let slide of slides">
+                <div class="slide-inner slide-bg-image" style="background: url('{{slide.image}}'); background-size: cover;
+                background-position: center;">
+                    <div class="container">
+                        <div data-swiper-parallax="300" class="slide-title">
+                            <h2>{{slide.title}}</h2>
+                        </div>
+                        <div data-swiper-parallax="400" class="slide-text">
+                            <p>{{slide.detail}}</p>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div data-swiper-parallax="500" class="slide-btns">
+                            <a href="#" class="theme-btn">Servicios</a> 
+                            <a href="#" class="theme-btn-s2">Proyectos</a> 
+                        </div>
+                    </div>
+                </div> <!-- end slide-inner --> 
+            </div> <!-- end swiper-slide -->
+
+            
+        </div>
+        <!-- end swiper-wrapper -->
+
+        <!-- swipper controls -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+<!-- end of hero slider -->
+
+
+        <!-- start feature-section -->
+        <section class="features-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-xs-12">
+                        <div class="feature-grids clearfix">
+                            <div class="grid">
+                                <div class="icon">
+                                    <i class="fi flaticon-solar-energy"></i>
+                                </div>
+                                <span class="count">01.</span>
+                                <h4>Generación termoeléctrica</h4>
+                                
+                            </div>
+                            <div class="grid">
+                                <div class="icon">
+                                    <i class="fi flaticon-worker"></i>
+                                </div>
+                                <span class="count">02.</span>
+                                <h4>Mantenimiento continuo</h4>
+                            </div>
+                            <div class="grid">
+                                <div class="icon">
+                                    <i class="fi flaticon-expansion"></i>
+                                </div>
+                                <span class="count">03.</span>
+                                <h4>Transmisión de energía</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end container -->
+        </section>
+        <!-- end feature-section -->

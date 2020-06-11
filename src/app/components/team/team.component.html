@@ -1,0 +1,26 @@
+
+       
+        
+        <!-- TEAM START -->
+        
+            <owl-carousel [options]="TeamOptions" class="team-carousel-alt slider hover-effects image-hover">
+              <div class="slide" *ngFor="let slide of team">
+                 <div class="team-portrait">
+                    <figure class="tp-headshot"><img src="{{slide.image}}" alt=""></figure> 
+                    <div class="tp-caption">
+                        <div class="inner-tp-caption">
+                            <h3>{{slide.name}}</h3>
+                            <p>{{slide.position}}</p>
+                            <div class="tp-social">
+                                <div class="social-icon"><p><a href="mailto:contacto@endeandina.bo"><i class="fab far fa-envelope"></i></a></p></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+              </div>
+              
+
+            </owl-carousel> 
+
+        <!-- TEAM END -->

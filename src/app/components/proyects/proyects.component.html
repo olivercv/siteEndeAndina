@@ -1,0 +1,24 @@
+
+        <!-- RECENT PROJECTS START -->
+        <div class="container-fluid fw-gallery-thumbnails" style="margin: 3rem auto 0rem auto;">
+            <div class="fw-gallery-title">
+                <h2>Galeria de imágenes</h2>
+                <p>Colección de fotografías que exponen nuestros diferentes ambientes de trabajo.</p>
+            </div>
+            <owl-carousel [options]="ProyectOptions" class="gallery-carousel" >
+
+              <div class="slide" *ngFor="let slide of slides">
+                <div class="gallery-layer">
+                  <figure class="gl-thumbnail"><img src="{{slide.thumb}}" alt=""></figure>
+                  <div class="gl-caption">
+                    <h3>{{slide.title}}</h3>
+                    <p>{{slide.caption}}</p>
+                  </div>
+                  <div class="gl-overlay" (click)="open(slide.numbers-1)"></div>
+                </div>
+              </div>
+
+              
+            </owl-carousel>
+        </div>
+        <!-- RECENT PROJECTS END -->

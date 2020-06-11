@@ -1,0 +1,219 @@
+
+/*--------------------------------------------------------------
+#0.4	hero slider
+--------------------------------------------------------------*/
+.hero-slider {
+    width: 100%;
+    height: 100vh!important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+  }
+  
+  @media (max-width: 991px) {
+    .hero-slider {
+      height: 100vh;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .hero-slider {
+      height: 100vh;
+    }
+  }
+  
+  .hero-slider .swiper-slide {
+    overflow: hidden;
+    color: #fff;
+  }
+
+
+  
+  .hero-slider .swiper-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .hero-slider .slide-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: left;
+  }
+  
+  .hero-slider .swiper-button-prev,
+  .hero-slider .swiper-button-next {
+    background: transparent;
+    width: 55px;
+    height: 55px;
+    line-height: 53px;
+    margin-top: -30px;
+    text-align: center;
+    border: 2px solid #d4d3d3;
+    border-radius: 55px;
+  }
+  
+  @media (max-width: 767px) {
+    .hero-slider .swiper-button-prev,
+    .hero-slider .swiper-button-next {
+      display: none;
+    }
+  }
+  
+  .hero-slider .swiper-button-prev {
+    left: 25px;
+  }
+  
+  .hero-slider .swiper-button-prev:before {
+    font-family: "themify";
+    content: "\e629";
+    font-size: 15px;
+    color: #d4d3d3;
+  }
+  
+  .hero-slider .swiper-button-next {
+    right: 25px;
+  }
+  
+  .hero-slider .swiper-button-next:before {
+    font-family: "themify";
+    content: "\e628";
+    font-size: 15px;
+    color: #d4d3d3;
+  }
+  
+  .hero-slider .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    line-height: 12px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  
+  .hero-slider .swiper-pagination-bullet-active {
+    color: #fff;
+    background: #95BD20;
+  }
+  
+  .hero-slider .swiper-container-horizontal > .swiper-pagination-bullets,
+  .hero-slider .swiper-pagination-custom,
+  .hero-slider .swiper-pagination-fraction {
+    bottom: 30px;
+  }
+  
+  @media screen and (min-width: 992px) {
+    .hero-slider .swiper-container-horizontal > .swiper-pagination-bullets,
+    .hero-slider .swiper-pagination-custom,
+    .hero-slider .swiper-pagination-fraction {
+      display: none;
+    }
+  }
+  
+  
+  /*--------------------------------------------------------------
+      #hero-style-2
+  --------------------------------------------------------------*/
+  .hero-style-2, .hero-style-3 {
+    height: 100%;
+  }
+  
+  @media (max-width: 991px) {
+    .hero-style-2, .hero-style-3 {
+      height: 100%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .hero-style-2, .hero-style-3 {
+      height: 80%;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .hero-style-2 .container, .hero-style-3 .container {
+      margin-top: -110px;
+    }
+  }
+  
+  .hero-style-2 .slide-title, .hero-style-3 .slide-title {
+    max-width: 740px;
+  }
+  
+  .hero-style-2 .slide-text, .hero-style-3 .slide-text {
+    max-width: 645px;
+  }
+  
+  .hero-style-2 .slide-title h2, .hero-style-3 .slide-title h2 {
+    font-size: 72px;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 0 0.4em;
+    text-transform: capitalize;
+  }
+  
+  @media (max-width: 1199px) {
+    .hero-style-2 .slide-title h2, .hero-style-3 .slide-title h2 {
+      font-size: 58px;
+      font-size: 3.625rem;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .hero-style-2 .slide-title h2, .hero-style-3 .slide-title h2 {
+      font-size: 50px;
+      font-size: 3.125rem;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .hero-style-2 .slide-title h2, .hero-style-3 .slide-title h2 {
+      font-size: 35px;
+      font-size: 2.1875rem;
+    }
+  }
+  
+  .hero-style-2 .slide-text p, .hero-style-3 .slide-text p {
+    font-size: 18px;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #fff;
+    margin: 0 0 2em;
+  }
+  
+  @media (max-width: 767px) {
+    .hero-style-2 .slide-text p, .hero-style-3 .slide-text p {
+      font-size: 16px;
+      font-size: 1rem;
+      font-weight: normal;
+    }
+  }
+  
+  .hero-style-2 .slide-btns > a:first-child, .hero-style-3 .slide-btns > a:first-child {
+    margin-right: 10px;
+  }
+  
+  

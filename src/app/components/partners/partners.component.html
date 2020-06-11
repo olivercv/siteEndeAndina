@@ -1,0 +1,19 @@
+
+<!-- CLIENTS START -->
+<div class="container-fluid clients-wide-section">
+    <div class="container">
+        <owl-carousel [options]="SlideOptions" class="clients-carousel slider">
+          <div class="slide" *ngFor="let img of Images">
+              <a href="#">
+                <figure class="clients-logo"><img src="{{img}}" alt=""></figure>
+              </a>
+              
+          </div>
+          
+        </owl-carousel> 
+    </div>
+</div>
+<!-- CLIENTS END -->
+
+
+

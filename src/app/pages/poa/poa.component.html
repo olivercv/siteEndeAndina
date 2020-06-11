@@ -1,0 +1,101 @@
+<div class="sections">
+    <div class="container">
+        <div class="pages-title">
+            <h1>Gestión <br> <span>Programa Operativo Anual</span></h1>
+            <p><a href="#">Inicio</a> &nbsp; > &nbsp; <a href="#">Programa Operativo Anual</a></p>
+        </div>
+    </div>  
+</div>
+ <!-- CONTENT START -->
+
+
+<section>
+    <div class="container">
+        <div class="section-title">
+            <h2>Programa Operativo Anual</h2>
+        </div>
+       
+    </div>
+    <!-- WIDE SECTION START -->
+    <div class="container-wide-grid">
+        <div class="row">
+
+            <div class="col-lg-6 full-prod-layer">
+                <div class="fc-content fc-left-align">
+                    <h5 >POA</h5>
+                    <h2><span>Produccion bruta</span></h2>
+                    
+                      <p class="text-white" >La producción de energía bruta para la gestión
+                        2019 en el Mercado Eléctrico Mayorista
+                        (MEM) del país, fue de <strong>9.530.762 MWh</strong> , de
+                        los cuales <strong>2.839.364,92 MWh</strong>  corresponden a <strong>ENDE ANDINA S.A.M.</strong>   </p>
+                      
+                    
+                    
+                  </div>
+            </div>
+
+            
+
+          <div class="col-lg-6 full-caption-layer">
+            <div class="fc-content">
+                <h3>Producción Bruta por planta</h3>
+             
+                    <canvas baseChart 
+                                [datasets]="lineChartData"
+                                [labels]="lineChartLabels"
+                                [options]="lineChartOptions"
+                                [colors]="lineChartColors"
+                                [legend]="lineChartLegend"
+                                [chartType]="lineChartType"
+                                [plugins]="lineChartPlugins"
+                                (chartHover)="chartHovered($event)"
+                                (chartClick)="chartClicked($event)"></canvas>
+               
+              
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="order-last order-md-12 col-lg-6 full-caption-layer">
+                <div class="fc-content fc-left-align">
+                    <h3>Generación por tipo de ciclo</h3>
+                    
+                        <canvas baseChart  
+                                    [datasets]="generacionData"
+                                    [labels]="lineChartLabels"
+                                    [options]="lineChartOptions"
+                                    [colors]="lineChartColors"
+                                    [legend]="lineChartLegend"
+                                    [chartType]="lineChartType"
+                                    [plugins]="lineChartPlugins"
+                                    (chartHover)="chartHovered($event)"
+                                    (chartClick)="chartClicked($event)"></canvas>
+                    
+                </div>
+              </div>
+              <div class="order-first order-md-12 col-lg-6 full-prod-layer-alt">
+                <div class="fc-content">
+                    <h5>POA</h5>
+                    <h2 ><span>Generación de energía</span></h2>
+                    
+                      <p class="text-white">Dentro de la generación termoeléctrica,
+                        ENDE ANDINA S.A.M. contribuyó al sistema
+                        con 2.843.728 MWh que representa el 47%
+                        respecto a la generación termoeléctrica total
+                        de energía.</p>
+                    <p class="text-white"> En la participación dentro del Sistema
+                        Interconectado Nacional, ENDE ANDINA
+                        S.A.M. contribuye con el 30% de la
+                        generación total de energía.</p>
+                      
+                    
+                    
+                  </div>
+              </div>
+        </div>
+    </div>
+    <!-- WIDE SECTION END -->
+    </section>
+
+ 

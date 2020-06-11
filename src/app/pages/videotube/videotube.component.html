@@ -1,0 +1,102 @@
+
+
+    <div class="sections ptsur-bg">
+        <div class="container">
+            <div class="pages-title">
+                <h1>Multimedia <br> <span>Canal de Videos</span></h1>
+                <p><a href="#">Inicio</a> &nbsp; > &nbsp; <a href="#">Canal de Video</a></p>
+            </div>
+        </div>  
+    </div>
+    
+
+<!-- CONTENT START -->
+<section>
+    <div class="container">
+        <div class="section-tittle-alt">
+            <h2>Videos del canal</h2>
+        </div>
+        <p class="gallery-info service-alt">Nuestros videos mas recientes desde nuestro canal oficial en youtube.</p>
+        
+        <!-- PROJECT GRID START -->
+        <div class="row hover-effects image-hover">
+          
+
+            <div class="col-md-6 col-lg-4" *ngFor="let video of listVideos" >
+                
+                <div class="organic-pulsing-video">
+                    <div class="youtube-popup" >
+                      <a  (click)="openVideo(video.id.videoId)" class="popup-youtube">
+                          <figure class="video-image"><img [src]="video.snippet.thumbnails.high.url" alt=""></figure>
+                      </a>
+                      <button *ngIf="video.id.videoId" class="pulse-button"></button>
+                    </div>
+                  </div> 
+                  <div class="pg-caption" >
+                    <h3>{{video.snippet.title}}</h3>
+                    <p>{{video.snippet.description}}</p>
+                  </div>
+                  
+
+                <!-- <div class="project-grid"  >
+                    <figure class="pg-thumbnail"><a href="#"><img [src]="video.snippet.thumbnails.high.url" alt=""></a></figure> 
+                    <div class="pg-caption">
+                        
+                        <h3>{{video.snippet.title}}</h3>
+                        <p>{{video.snippet.description}}</p>
+
+                        <div *ngIf="video.id.videoId" class="btn-more"><a class="btn btn-hover-corner" (click)="detalleVideo(video.id.videoId)" role="button">Ver video</a></div>
+                    </div>
+                </div> -->
+             </div>
+          
+          
+          
+         
+        </div>
+        <!-- PROJECT GRID END -->
+    </div>
+</section> 
+<!-- CONTENT START -->
+
+  
+<!-- CONTENT START -->
+<!-- <section>
+    <div class="container">
+        <div class="row">
+            <div class="card-columns">
+                <div *ngFor="let video of listVideos" >
+                    <div class="card" *ngIf="video.id.videoId" >
+                        <img [src]="video.snippet.thumbnails.medium.url" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">{{video.snippet.title}}</h5>
+                        <p class="card-text">{{video.snippet.description}}</p>
+                        <button class="btn btn-outline-primary btn-block" (click)="detalleVideo(video.id.videoId)" >Ver video</button>
+                        </div>
+                        <div class="card-footer">
+                        <small class="text-muted">Publicado: {{video.snippet.publishedAt | date}}</small>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</section> -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+            <!-- video youtube -->
+            <iframe width="460" height="315" [src]="videoId | youtube" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="modal-footer">
+         
+          <div class="btn-more"><a class="btn btn-hover-corner" (click)="cerrarModal()" role="button">Cerrar</a></div>
+        </div>
+      </div>
+    </div>
+  </div>

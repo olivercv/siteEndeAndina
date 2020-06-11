@@ -1,0 +1,187 @@
+<!-- <app-slider></app-slider> -->
+    <!--SLIDER START-->
+    <div class="home-slider">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <!-- Slide One - Set the background image for this slide in the line below -->
+              <div class="carousel-item active" style="background-image: url('assets/img/slider/slider2.jpg')">
+                <div class="container">
+                    <div class="slider-caption">
+                        <h2 class="display-4 animated fadeInRight">Generación,<br> <span>interconexión</span></h2>
+                        <p class="lead animated fadeInRight"> comercialización, transmisión, asociada a la generación, importación y exportación de electricidad.</p>
+                        <div class="btn-more"><a class="btn btn-slider" [routerLink]="['/about']" role="button">Acerca de nosotros</a></div>
+                    </div>  
+                </div>
+              </div>
+              <!-- Slide Two - Set the background image for this slide in the line below -->
+              <div class="carousel-item" style="background-image: url('assets/img/slider/slider4.jpg')">
+                <div class="container">
+                    <div class="slider-caption">
+                        <h2 class="display-4 animated fadeInRight">Plantas de  <br> <span>generación de Energía</span></h2>
+                        <p class="lead animated fadeInRight">Las actividades relacionadas a la generación termoeléctrica de energía son: el diseño, construcción, operación y el mantenimiento.</p>
+                        <div class="btn-more"><a class="btn btn-slider"[routerLink]="['/entrerios']" role="button">Nuestras Plantas</a></div>
+                    </div>  
+                </div>
+              </div>
+              <!-- Slide Three - Set the background image for this slide in the line below -->
+              <div class="carousel-item" style="background-image: url('assets/img/slider/slider3.jpg')">
+                <div class="container">
+                    <div class="slider-caption">
+                        <h2 class="display-4 animated fadeInRight">Proyectos <br> <span>Ciclos Combinados </span></h2>
+                        <p class="lead animated fadeInRight">El proyecto consiste en la ampliación de las Plantas Termoeléctricas, en base a bloques de ciclos combinados, manteniendo las instalaciones existentes en ciclo abierto..</p>
+                        <div class="btn-more"><a class="btn btn-slider" [routerLink]="['/entrerios']" role="button">Ciclos combinados</a></div>
+                    </div>  
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>  
+    </div>
+    <!--SLIDER END-->
+    
+    <div class="container-fluid construction-wide-banner">
+        <div class="wide-banner-content">
+            <h2>Nuestras Plantas de generación de energía.</h2>
+            <p>ENDE ANDINA S.A.M. cuenta con tres plantas termoeléctricas en operación ubicadas en tres departamentos estratégicos de Bolivia: Cochabamba (Entre Ríos), Tarija (Yaguacua) y Santa Cruz (Warnes)..</p>
+        </div>
+    </div>
+    
+    <div class="container construction-services">
+        <div class="row hover-effects image-hover">
+          <div class="col-lg-4">
+            <div class="thumbnail-box-alt" [routerLink]="['/entrerios']">
+                <figure class="tb-image"><img src="assets/img/imagenes/img-2.jpg" alt=""></figure>  
+                <div class="tb-caption">
+                    <div class="inner-caption">
+                        <div class="ic-top">
+                            <figure class="ic-icon"><img src="assets/img/master/warning_bulb.svg" alt=""></figure>
+                            <h3>Entre Rios</h3>
+                        </div>
+                        <p>Carretera nueva a Santa Cruz 1,7 km al este del centro de Entre Ríos. Cochabamba - Bolivia.</p>
+                    </div>
+                </div>
+            </div>  
+          </div>
+          <div class="col-lg-4 center-box">
+            <div class="thumbnail-box-alt" [routerLink]="['/delsur']">
+                <figure class="tb-image"><img src="assets/img/imagenes/img-4.jpg" alt=""></figure>    
+                <div class="tb-caption">
+                    <div class="inner-caption">
+                        <div class="ic-top">
+                            <figure class="ic-icon"><img src="assets/img/master/warning.svg" alt=""></figure>
+                            <h3>Del Sur</h3>
+                        </div>
+                        <p>Carretera 9, Villamontes – Yacuiba 2,7 km al norte del centro de Yaguacua. Tarija - Bolivia</p>
+                    </div>
+                </div>
+            </div>  
+          </div>
+          <div class="col-lg-4">
+            <div class="thumbnail-box-alt" [routerLink]="['/warnes']">
+                <figure class="tb-image"><img src="assets/img/imagenes/img-3.jpg" alt=""></figure>  
+                <div class="tb-caption">
+                    <div class="inner-caption">
+                        <div class="ic-top">
+                            <figure class="ic-icon"><img src="assets/img/master/battery.svg" alt=""></figure>
+                            <h3>Warnes</h3>
+                        </div>
+                        <p>Ubicada en inmediaciones del Parque Industrial Latinoamericano (PILAT). Santa Cruz - Bolivia</p>
+                    </div>
+                </div>
+            </div>  
+          </div>
+
+        </div>
+    </div>
+    
+      <!-- WHY US START -->
+      <div class="container-fluid wide-banner">
+        <div class="wide-banner-content">
+            <h5>Transparencia</h5>
+            <h2>Memoria Anual 2019</h2>
+            <div class="btn-more"><a class="btn btn-hover-corner" href="assets/doc/MemoriaEndeAndina_2019.pdf" download role="button">Descargar</a></div>
+        </div>
+    </div>
+    <!-- WHY US END -->
+    
+    <!-- YOUTUBE POPUP START -->
+    <div class="container popup-video-section">
+        <div class="organic-pulsing-video">
+          <iframe src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=f13arselc" width="100%" height="480" seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen></iframe>
+        </div> 
+    </div>
+    <!-- YOUTUBE POPUP END -->
+        
+        <!-- COMPANY ABOUT START -->
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="about-info">
+                  <h5>Sobre nosotros</h5>
+                  <h2>Somos parte de ENDE Corporación.</h2>
+                  <p><strong>ENDE ANDINA S.A.M.</strong> es una empresa filial de ENDE Corporación, cuya actividad principal es la generación de energía eléctrica a través de plantas termoeléctricas con presencia en los departamentos de Cochabamba, Tarija y Santa Cruz. La energía generada es inyectada al Sistema Interconectado Nacional (SIN), en niveles de alta tensión.</p>
+                  <p>Las actividades relacionadas a la generación termoeléctrica de energía son: el diseño, construcción, operación y el mantenimiento de las plantas de generación. Todo en cumplimiento de la Ley de Electricidad, sus reglamentos, resoluciones de la Autoridad de Fiscalización y Control Social de Electricidad, así como la normativa del Comité Nacional de Despacho de Carga (C.N.D.C.).</p>
+                  
+                  <!-- <div class="btn-more"><a class="btn btn-hover-corner" [routerLink]="['/history']" role="button">Ende corporación</a></div> -->
+                </div>
+              </div>
+              <div class="col-lg-6 space-break">
+                <figure class="about-img"><img src="assets/img/imagenes/corporacion.png" alt=""></figure>
+              </div>
+            </div>
+            <hr class="section-divider">
+            
+        </div>
+        <!-- COMPANY ABOUT END -->
+
+        <app-partners></app-partners>
+
+        <!-- SOCIAL NEt -->
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-4 parallax-side construction-parallax"></div>
+              <div class="col-lg-8 content-side">
+                <div class="inner-content" style="width: 100%;">
+                  <div class="panel-title">
+                    <h5>Comunicación</h5>
+                    <h2>Redes Sociales</h2>
+                  </div>
+                  <div class="row" >
+                    <div class="col-lg-6 sp-space-break-alt">
+                      <div class="fb-page" data-href="https://www.facebook.com/EndeAndina/" data-tabs="timeline" data-width="500" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/EndeAndina/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/EndeAndina/">ENDE Andina SAM</a></blockquote></div>
+                    </div>
+                    <div class="col-lg-6 sp-space-break-alt">
+                      <a
+                        class="twitter-timeline"
+                        data-lang="es"
+                        data-width="500"
+                        data-height="500"
+                        data-theme="light"
+                        href="https://twitter.com/EndeAndina?ref_src=twsrc%5Etfw"
+                      >
+                        Tweets por EndeAndina
+                      </a>
+                    </div>
+                  </div>
+                 
+
+
+                 
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- SOCIAL NET END -->
+
+<app-carrusel></app-carrusel>
+
+
+
+            

@@ -1,0 +1,51 @@
+<div class="sections">
+    <div class="container">
+        <div class="pages-title">
+            <h1>Multimedia <br> <span>Banco de imágenes</span></h1>
+            <p><a href="#">Inicio</a> &nbsp; > &nbsp; <a href="#">Banco de Imágenes</a></p>
+        </div>
+    </div>  
+</div>
+
+<section>
+    <div class="container" >
+
+      
+    </div>
+</section>
+
+
+<!-- <div *ngFor="let image of _albums; let i=index">
+    <img [src]="image.thumb" (click)="open(i)" />
+  </div> -->
+
+
+<!-- CONTENT START -->
+<section>
+    <!-- PROJECT GRID START -->
+    <div class="container">
+        <div class="services-tittle">
+            <h5>Instagram</h5>
+            <h2>Galería de imágenes</h2>
+        </div>
+        <p class="gallery-info">Imágenes correspondientes al canal de Instgram.</p>
+       
+        <div class="grid" id="kehl-grid">
+                      
+            <div class="row">
+                <div class="col-3 grid-box chemical" *ngFor="let image of _albums; let i=index">
+                    <a class="image-popup-vertical-fit" (click)="open(i)">
+                        <div class="image-mask"></div>
+                        <img [src]="image.thumb"  alt="" />
+                        <h3>{{image.caption}}</h3>
+                    </a>
+               </div>
+            </div>
+           
+
+           
+        </div>
+    </div>
+    <!-- PROJECT GRID END -->
+</section> 
+<!-- CONTENT START -->

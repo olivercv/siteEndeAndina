@@ -1,0 +1,61 @@
+<div class="sections">
+    <div class="container">
+        <div class="pages-title">
+            <h1>Gestión <br> <span>Presupuesto Anual</span></h1>
+            <p><a href="#">Inicio</a> &nbsp; > &nbsp; <a href="#">Presupuesto Anual</a></p>
+        </div>
+    </div>  
+</div>
+
+
+
+    <!-- CONTENT START -->
+<section>
+    <div class="container">
+        <div class="section-title">
+            <h2>Presupuesto Anual</h2>
+           
+        </div>
+    </div>
+
+    <!-- WIDE SECTION START -->
+    <div class="container-wide-grid">
+        <div class="row">
+
+            <div class="order-first order-md-12 col-lg-6 full-prod-layer-alt">
+                <div class="fc-content">
+                    <h5 >Presupuesto</h5>
+                    <h2><span>Utilidad de la Empresa</span></h2>
+                    
+                      <p class="text-white">El cuadro presenta las cifras de utilidad que obtubo la empresa cada año desde su fundación, expresado en Bolivianos</p>
+                      
+                    
+                    
+                  </div>
+            </div>
+
+            
+
+          <div class="col-lg-6 full-caption-layer">
+            <div class="fc-content">
+                <h3>Utilidad de la empresa (Bs)</h3>
+                <div style="display: block">
+                    <canvas baseChart  height="180"
+                                [datasets]="utilidadData"
+                                [labels]="lineChartLabels"
+                                [options]="lineChartOptions"
+                                [colors]="lineChartColors"
+                                [legend]="lineChartLegend"
+                                [chartType]="barChartType"
+                                (chartHover)="chartHovered($event)"
+                                (chartClick)="chartClicked($event)"></canvas>
+                </div>
+              
+            </div>
+          </div>
+        </div>
+        
+    </div>
+    <!-- WIDE SECTION END -->
+   
+</section>
