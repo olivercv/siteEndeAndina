@@ -59,7 +59,7 @@ const routes: Routes = [
   { path: 'proyecciones',  component: ProyeccionesComponent },
   { path: 'denuncia',  component: DenunciaComponent },
   { path: 'solicitud',  component: SolicitudInformacionComponent },
-  { path: 'adquisiciones',  component: AdquisicionesComponent },
+  { path: 'convocatorias',  component: AdquisicionesComponent },
   { path: 'error404',  component: NopageComponent },
 
 

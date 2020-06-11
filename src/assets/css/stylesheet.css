@@ -3,7 +3,7 @@
 
 
 /*====================================================
-  * Template:   ENde Andina
+  * Template:   Ende Andina
   * Version:    1.0
   * Author:     Oliver
   * Create :    30 Abril 2020
@@ -870,7 +870,7 @@ hr.section-divider{
 }
 
 .parallax-side{
-    background-image: url("../img/images/corporate1.jpg");
+    background-image: url("../img/imagenes/oficinas.jpg");
     height: 500px; 
     background-position: center;
     background-repeat: no-repeat;
@@ -1070,7 +1070,7 @@ hr.divider{
 }
 
 .alt-counter-parallax{ 
-    background-image: url("../img/images/indusy-parallax.jpg");
+    background-image: url("../img/imagenes/oficinas.jpg");
     height: 100%; 
     background-attachment: fixed;
     background-position: center;
@@ -1120,7 +1120,7 @@ hr.divider{
 }
     
 .hover-thumb1:hover{ 
-    background-image: url("../img/images/industry1.jpg");
+    background-image: url("../img/imagenes/img-1.jpg");
     height: auto; 
     background-position: center;
     background-repeat: no-repeat;
@@ -1130,7 +1130,7 @@ hr.divider{
 } 
     
 .hover-thumb2:hover{ 
-    background-image: url("../img/images/industry2.jpg");
+    background-image: url("../img/imagenes/img-2.jpg");
     height: auto; 
     background-position: center;
     background-repeat: no-repeat;
@@ -1140,7 +1140,7 @@ hr.divider{
 }   
     
 .hover-thumb3:hover{ 
-    background-image: url("../img/images/industry3.jpg");
+    background-image: url("../img/imagenes/img-3.jpg");
     height: auto; 
     background-position: center;
     background-repeat: no-repeat;
@@ -1150,7 +1150,7 @@ hr.divider{
 } 
     
 .hover-thumb4:hover{ 
-    background-image: url("../img/images/industry4.jpg");
+    background-image: url("../img/imagenes/img-4.jpg");
     height: auto; 
     background-position: center;
     background-repeat: no-repeat;
@@ -2007,7 +2007,7 @@ a.active:after {
   ====================================================*/
 
 .agriculture-bg{
-    background-image: url("../img/images/agriculture-bg.jpg");
+    /* background-image: url("../img/images/agriculture-bg.jpg"); */
 }
 
 .agriculture-bg:before {
@@ -2163,7 +2163,7 @@ a.active:after {
   ====================================================*/
 
 .chemical-bg{
-    background-image: url("../img/images/chemical-bg.jpg");
+    /* background-image: url("../img/images/chemical-bg.jpg"); */
 }
 
 .chemical-bg:before {
@@ -2182,7 +2182,7 @@ a.active:after {
   ====================================================*/
 
 .material-bg{
-    background-image: url("../img/images/material-bg.jpg");
+    /* background-image: url("../img/images/material-bg.jpg"); */
 }
 
 .material-bg:before {
@@ -2201,7 +2201,7 @@ a.active:after {
   ====================================================*/
 
 .power-bg{
-    background-image: url("../img/images/power-bg.jpg");
+    /* background-image: url("../img/images/power-bg.jpg"); */
 }
 
 .pter-bg{
@@ -2231,7 +2231,7 @@ a.active:after {
   ====================================================*/
 
 .mechanical-bg{
-    background-image: url("../img/images/mechanical-bg.jpg");
+    /* background-image: url("../img/images/mechanical-bg.jpg"); */
 }
 
 .mechanical-bg:before {
@@ -2250,7 +2250,7 @@ a.active:after {
   ====================================================*/
 
 .petroleum-bg{
-    background-image: url("../img/images/petroleum-bg.jpg");
+    /* background-image: url("../img/images/petroleum-bg.jpg"); */
 }
 
 .petroleum-bg:before {
@@ -3626,7 +3626,7 @@ p.schedule::before{
 /* .owl-theme .owl-controls{margin-top:10px;text-align:center}.owl-theme .owl-controls .owl-buttons div{color:#FFF;display:inline-block;zoom:1;*display:inline;margin:5px;padding:3px 10px;font-size:12px;-webkit-border-radius:30px;-moz-border-radius:30px;border-radius:30px;background:#869791;filter:Alpha(Opacity=50);opacity:.5}.owl-theme .owl-controls.clickable .owl-buttons div:hover{filter:Alpha(Opacity=100);opacity:1;text-decoration:none}.owl-theme .owl-controls .owl-page{display:inline-block;zoom:1;*display:inline}.owl-theme .owl-controls .owl-page span{display:block;width:12px;height:12px;margin:5px 7px;filter:Alpha(Opacity=50);opacity:.5;-webkit-border-radius:20px;-moz-border-radius:20px;border-radius:20px;background:#869791}.owl-theme .owl-controls .owl-page.active span,.owl-theme .owl-controls.clickable .owl-page:hover span{filter:Alpha(Opacity=100);opacity:1}.owl-theme .owl-controls .owl-page span.owl-numbers{height:auto;width:auto;color:#FFF;padding:2px 10px;font-size:12px;-webkit-border-radius:30px;-moz-border-radius:30px;border-radius:30px}.owl-item.loading{min-height:150px;background:url(AjaxLoader.gif) no-repeat center center} */
 
 .testimonials-parallax{ 
-    background-image: url("../img/images/parallax-img.jpg");
+    background-image: url("../img/imagenes/oficinas.jpg");
     height: 500px; 
     background-position: center;
     background-repeat: no-repeat;
@@ -5157,7 +5157,7 @@ p.active{
 }
 
 .parallax-side-alt{
-    background-image: url("../img/images/eolic-bg.jpg");
+    background-image: url("../img/imagenes/turbin.jpg");
     height: 500px; 
     background-position: center;
     background-repeat: no-repeat;
@@ -5241,7 +5241,7 @@ hr.divider-alt{
     padding: 25px 0px 0px;
     margin-top: -150px;
     z-index: 1;
-    background-image: url("../img/images/solar-panels.jpg");
+    background-image: url("../img/imagenes/turbin.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -5750,7 +5750,7 @@ hr.divider-alt{
 }
 
 .project-grid-bg{ 
-    background-image: url("../img/images/industry-bg.jpg");
+    /* background-image: url("../img/images/industry-bg.jpg"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -6135,7 +6135,7 @@ hr.divider-alt{
 }
 
 .parallax-contact-section{ 
-    background-image: url("../img/images/pc-bg.jpg"); 
+    /* background-image: url("../img/images/pc-bg.jpg");  */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
