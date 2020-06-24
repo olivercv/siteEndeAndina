@@ -12,22 +12,22 @@ slides = [
   {
     number: '01.',
     image : '../../../assets/img/images/post-preview1.jpg',
-    title: 'Planta Termoeléctrica Entre Ríos',
-    detail: 'Travelling salesman and above it there hung a picture that he had recently cut out',
+    title: 'UNICOM/ENDE CORPORACIÓN: ENDE SE REUNIÓ CON EMBAJADOR DE BOLIVIA EN BRASIL',
+    detail: 'Ejecutivos de ENDE Corporación y el embajador de Bolivia en Brasil,  Wilfredo Rojo Parada, se reunieron con el objetivo de retomar la agenda energética Bolivia – Brasil',
     url: '#'
   },
   {
     number: '02.',
     image : '../../../assets/img/images/post-preview2.jpg',
-    title: 'Planta Termoeléctrica Del Sur',
-    detail: 'Travelling salesman and above it there hung a picture that he had recently cut out',
+    title: 'UNICOM/ENDE CORPORACIÓN: WEBINAR INTERNACIONAL “CYBERSEGURIDAD INDUSTRIAL”',
+    detail: 'ENDE Corporación, con el objetivo de conocer los riesgos y prevenciones que se deben seguir y con una visión que apunta a mejorar sus niveles de seguridad de información',
     url: '#'
   },
   {
     number: '03.',
     image : '../../../assets/img/images/post-preview3.jpg',
-    title: 'Planta Termoeléctrica Warnes',
-    detail: 'Travelling salesman and above it there hung a picture that he had recently cut out',
+    title: 'UNICOM/ENDE TRANSMISIÓN: ENDE TRANSMISIÓN CONSTRUYE LÍNEA ELÉCTRICA',
+    detail: 'ENDE Transmisión está ejecutando el proyecto “Línea de Transmisión 230 kV Los Troncos – Guarayos – Trinidad”, el mismo que permitirá extender el Sistema Troncal Interconectado (STI) ',
     url: '#'
   }
 ];

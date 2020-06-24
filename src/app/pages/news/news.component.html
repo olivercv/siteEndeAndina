@@ -3,66 +3,42 @@
         <div class="container">
             <div class="pages-title">
                 <h1>Nuestras <br> <span>Noticias</span></h1>
-                <p><a href="#">Inicio</a> &nbsp; > &nbsp; <a href="#">Noticias</a></p>
+                <p><a href="javascript:void(0)">Inicio</a> &nbsp; > &nbsp; <a href="#">Noticias</a></p>
             </div>
         </div>  
     </div>
-    
+  
     <!-- CONTENT START -->
     <section>
         <div class="container">
-            <div class="row">
+            <div class="row">                       
              <!-- BLOG CONTENT START -->
               <div class="col-lg-8 col-xl-9">
-                  <div class="post-preview">
-                    <figure class="post-preview-img"><a href="#"><img src="../assets/img/images/post-preview8.jpg" alt=""></a></figure>
+                  
+                  <div class="post-preview" *ngFor="let new of publications">
+                    <figure class="post-preview-img"><a href="javascript:void(0)"><img [src]="new.image | image: 'publication'" alt=""></a></figure>
                     <div class="pp-caption">
-                        <h3><a href="#">UNICOM/ENDE CORPORACIÓN: WEBINAR INTERNACIONAL “CYBERSEGURIDAD INDUSTRIAL”</a></h3>
-                        <p>ENDE Corporación, con el objetivo de conocer los riesgos y prevenciones que se deben seguir y con una visión que apunta a mejorar sus niveles de seguridad de información en su red “OT”, ve alternativas para proteger los sistemas de control encargados de la cadena productiva del sector eléctrico, generación, transmisión, distribución y servicios, para garantizar el suministro eléctrico en Bolivia.</p>
-                        <h4 class="link"><a href="#">Leer más</a></h4>
+                        <h3><a href="javascript:void(0)">{{new.title}}</a></h3>
+                        <p>{{ new.description }}</p>
+                        <h4 class="link"><a href="javascript:void(0)">Leer más</a></h4>
                         <hr class="post">
                         <div class="pp-bottom">
                             <div class="about-author">
-                                <figure class="author-avatar"><img src="../assets/img/images/engineer.jpg" alt=""></figure>
+                                <!-- <figure class="author-avatar"><img src="../assets/img/images/engineer.jpg" alt=""></figure> -->
                                 <div class="author-info">
-                                    <h5>Comunicación</h5>
-                                    <p>Archivo</p>
+                                    <h5>{{new.category.name}}</h5>
+                                    <p>{{new.category.description}}</p>
                                 </div>
                             </div>
                             <div class="post-social">
-                                <p>Junio 10, 2020</p>
-                                <div class="ps-social-icons"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
-                                <div class="ps-social-icons"><a href="#"><i class="fab fa-twitter"></i></a></div>
-                                <div class="ps-social-icons"><a href="#"><i class="fab fa-instagram"></i></a></div>
-                                <div class="ps-social-icons"><a href="#"><i class="fab fa-google-plus-g"></i></a></div>
+                                <p>{{new.date | date}}</p>
+                                <div class="ps-social-icons"><a href="https://www.facebook.com/EndeAndina"><i class="fab fa-facebook-f"></i></a></div>
+                                <div class="ps-social-icons"><a href="https://twitter.com/EndeAndina"><i class="fab fa-twitter"></i></a></div>
+                                <div class="ps-social-icons"><a href="https://www.instagram.com/endeandinasam/"><i class="fab fa-instagram"></i></a></div>
                             </div>
                         </div>
                     </div>
-                    <div class="post-preview">
-                    <figure class="post-preview-img"><a href="#"><img src="../assets/img/images/post-preview8.jpg" alt=""></a></figure>
-                    <div class="pp-caption">
-                        <h3><a href="#">UNICOM/ENDE CORPORACIÓN: ENDE SE REUNIÓ CON EMBAJADOR DE BOLIVIA EN BRASIL PARA RETOMAR AGENDA ENERGÉTICA</a></h3>
-                        <p>Ejecutivos de ENDE Corporación y el embajador de Bolivia en Brasil,  Wilfredo Rojo Parada, se reunieron con el objetivo de retomar la agenda energética Bolivia – Brasil, considerando que este país es un socio comercial muy importante.</p>
-                        <h4 class="link"><a href="#">Leer más</a></h4>
-                        <hr class="post">
-                        <div class="pp-bottom">
-                            <div class="about-author">
-                                <figure class="author-avatar"><img src="../assets/img/images/engineer.jpg" alt=""></figure>
-                                <div class="author-info">
-                                    <h5>Comunicación</h5>
-                                    <p>Archivo</p>
-                                </div>
-                            </div>
-                            <div class="post-social">
-                                <p>Junio 10, 2020</p>
-                                <div class="ps-social-icons"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
-                                <div class="ps-social-icons"><a href="#"><i class="fab fa-twitter"></i></a></div>
-                                <div class="ps-social-icons"><a href="#"><i class="fab fa-instagram"></i></a></div>
-                                <div class="ps-social-icons"><a href="#"><i class="fab fa-google-plus-g"></i></a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    
             </div>
                 <!-- PAGINATION START -->
                 <div class="site-pagination">
@@ -71,11 +47,11 @@
                         <li class="page-item">
 
                         </li>
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item active"><a class="page-link" href="javascript:void(0)">1</a></li>
+                        <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
+                        <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
                         <li class="page-item">
-                          <a class="page-link" href="#" aria-label="Next">
+                          <a class="page-link" href="javascript:void(0)" aria-label="Next">
                             <i class="fas fa-arrow-right"></i>
                           </a>
                         </li>
@@ -93,40 +69,33 @@
                       </div>
                       <div class="aside-list-group">
                           <h4>Categorías</h4>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><a href="#">Entrevistas</a>
-                            <span class="badge badge-primary badge-pill">12</span>
+                        <ul class="list-group list-group-flush" >
+                            <li class="list-group-item" *ngFor="let cat of categories" >
+                              <a href="javascript:void(0)">{{cat.name}}</a>
+                            <span class="badge badge-primary badge-pill">0</span>
                           </li>
-                          <li class="list-group-item"><a href="#">Informes</a>
-                            <span class="badge badge-primary badge-pill">16</span>
-                          </li>
-                          <li class="list-group-item"><a href="#">Gerencial</a>
-                            <span class="badge badge-primary badge-pill">13</span>
-                          </li>
-                          <li class="list-group-item"><a href="#">RErportaje</a>
-                            <span class="badge badge-primary badge-pill">10</span>
-                          </li>
+                          
                         </ul>
                       </div>
                       <div class="aside-related-posts">
                         <h4>Relacionados</h4>
                         <div class="aside-related-posts">
                           <div class="media">
-                              <a href="#"><img src="../assets/img/images/media-thumb1.jpg" class="mr-3" alt="..."></a> 
+                              <a href="javascript:void(0)"><img src="../assets/img/images/media-thumb1.jpg" class="mr-3" alt="..."></a> 
                               <div class="media-body">
                                 <h5 class="mt-0"><a href="#">Avances ciclos combinados</a></h5>
                                 <p>Enero 29, 2019</p>
                               </div>
                           </div>
                           <div class="media">
-                              <a href="#"><img src="../assets/img/images/media-thumb2.jpg" class="mr-3" alt="..."></a> 
+                              <a href="javascript:void(0)"><img src="../assets/img/images/media-thumb2.jpg" class="mr-3" alt="..."></a> 
                               <div class="media-body">
                                 <h5 class="mt-0"><a href="#">Avances ciclos combinados</a></h5>
                                 <p>Enero 29, 2019</p>
                               </div>
                           </div>
                           <div class="media">
-                              <a href="#"><img src="../assets/img/images/media-thumb3.jpg" class="mr-3" alt="..."></a> 
+                              <a href="javascript:void(0)"><img src="../assets/img/images/media-thumb3.jpg" class="mr-3" alt="..."></a> 
                               <div class="media-body">
                                 <h5 class="mt-0"><a href="#">Avances ciclos combinados</a></h5>
                                 <p>Enero 29, 2019</p>
@@ -137,12 +106,12 @@
                       </div>
                       <div class="aside-tags">
                         <h4>Tags</h4>
-                        <a class="btn btn-tags" href="#" role="button">Termoeléctrica</a>
-                        <a class="btn btn-tags" href="#" role="button">Ende</a>
-                        <a class="btn btn-tags" href="#" role="button">Electricidad</a>
-                        <a class="btn btn-tags" href="#" role="button">Energía</a>
-                        <a class="btn btn-tags" href="#" role="button">Planta</a>
-                        <a class="btn btn-tags" href="#" role="button">Gobierno</a>
+                        <a class="btn btn-tags" href="javascript:void(0)" role="button">Termoeléctrica</a>
+                        <a class="btn btn-tags" href="javascript:void(0)" role="button">Ende</a>
+                        <a class="btn btn-tags" href="javascript:void(0)" role="button">Electricidad</a>
+                        <a class="btn btn-tags" href="javascript:void(0)" role="button">Energía</a>
+                        <a class="btn btn-tags" href="javascript:void(0)" role="button">Planta</a>
+                        <a class="btn btn-tags" href="javascript:void(0)" role="button">Gobierno</a>
                       </div> 
                   </aside>
               </div>

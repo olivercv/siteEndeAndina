@@ -28,7 +28,6 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { DelsurComponent } from './pages/delsur/delsur.component';
 import { WarnesComponent } from './pages/warnes/warnes.component';
 import { VideotubeComponent } from './pages/videotube/videotube.component';
-import { YoutubePipe } from './pipes/youtube.pipe';
 import { HistoryComponent } from './pages/history/history.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { AnualreportComponent } from './pages/anualreport/anualreport.component';
@@ -53,6 +52,9 @@ import {ChartsModule} from 'ng2-charts';
 import { DenunciaComponent } from './pages/denuncia/denuncia.component';
 import { SolicitudInformacionComponent } from './pages/solicitud-informacion/solicitud-informacion.component';
 import { AdquisicionesComponent } from './pages/adquisiciones/adquisiciones.component';
+import { ConvocatoriasComponent } from './pages/convocatorias/convocatorias.component';
+import { PipesModule } from './pipes/pipes.module';
+
 
 
 
@@ -85,7 +87,6 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     DelsurComponent,
     WarnesComponent,
     VideotubeComponent,
-    YoutubePipe,
     HistoryComponent,
     GalleryComponent,
     AnualreportComponent,
@@ -106,7 +107,8 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     ProyeccionesComponent,
     DenunciaComponent,
     SolicitudInformacionComponent,
-    AdquisicionesComponent
+    AdquisicionesComponent,
+    ConvocatoriasComponent
   ],
   imports: [
     BrowserModule,
@@ -116,7 +118,8 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     OwlModule,
     SwiperModule,
     HttpClientModule,
-    ChartsModule
+    ChartsModule,
+    PipesModule
 
   ],
   providers: [

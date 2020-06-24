@@ -28,6 +28,7 @@ import { ProyeccionesComponent } from './pages/proyecciones/proyecciones.compone
 import { DenunciaComponent } from './pages/denuncia/denuncia.component';
 import { SolicitudInformacionComponent } from './pages/solicitud-informacion/solicitud-informacion.component';
 import { AdquisicionesComponent } from './pages/adquisiciones/adquisiciones.component';
+import { ConvocatoriasComponent } from './pages/convocatorias/convocatorias.component';
 
 
 const routes: Routes = [
@@ -59,7 +60,7 @@ const routes: Routes = [
   { path: 'proyecciones',  component: ProyeccionesComponent },
   { path: 'denuncia',  component: DenunciaComponent },
   { path: 'solicitud',  component: SolicitudInformacionComponent },
-  { path: 'convocatorias',  component: AdquisicionesComponent },
+  { path: 'convocatorias',  component: ConvocatoriasComponent },
   { path: 'error404',  component: NopageComponent },
 
 
