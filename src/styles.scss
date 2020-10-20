@@ -11,3 +11,20 @@
 // @import 'assets/css/responsive.css';
 // @import 'assets/css/slick.min.css';
 // @import 'assets/css/owl.carousel.min.css';
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+.text-video-gallery {
+    margin-bottom: 1.5rem;
+}
+
+.text-video-gallery  a{
+    color: #8C8C9E;
+    font-weight: 600;
+}
+
+.text-video-gallery  a:hover {
+    color: #b9e831;
+    text-decoration: none;
+}

@@ -60,7 +60,7 @@ export class WarnesComponent implements OnInit {
       src : '../../../assets/img/gallery/ptwar/gallery7.jpg',
       thumb : '../../../assets/img/gallery/ptwar/gallery7.jpg',
       title: 'Turbinas Warnes',
-      caption: 'Vista nocturan de las turbinas',
+      caption: 'Vista de Subestación de la planta',
       url: '#'
     },
     {
@@ -68,7 +68,7 @@ export class WarnesComponent implements OnInit {
       src : '../../../assets/img/gallery/ptwar/gallery8.jpg',
       thumb : '../../../assets/img/gallery/ptwar/gallery8.jpg',
       title: 'Termoeléctrica Warnes',
-      caption: 'Trasporte de electricidad',
+      caption: 'Vista de Subestación de la planta',
       url: '#'
     },
     {
@@ -76,7 +76,7 @@ export class WarnesComponent implements OnInit {
       src : '../../../assets/img/gallery/ptwar/gallery9.jpg',
       thumb : '../../../assets/img/gallery/ptwar/gallery9.jpg',
       title: 'Termoeléctrica Warnes',
-      caption: 'Trasporte de electricidad',
+      caption: 'Vista nocturna de turbinas',
       url: '#'
     }
   ];

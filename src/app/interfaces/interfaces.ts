@@ -13,7 +13,7 @@ export interface ICategories {
 
 
 export interface IPublication {
-    id: number;
+    _id: number;
     date: Date;
     title: string;
     description: string;
@@ -22,13 +22,38 @@ export interface IPublication {
     type?: number;
     order?: number;
     image?: string;
+    lnk?: string;
   }
 
 export interface ICategory {
-    id: number;
+    _id: number;
     name: string;
     description: string;
     active: boolean;
     order?: number;
   }
 
+export interface IConvocatories {
+    convocatories: IConvocatory[];
+    total: number;
+    ok: boolean;
+  }
+
+export interface Idocument {
+    _id: number;
+    titulo: string;
+    sfile: string;
+    convocatory: IConvocatory;
+  }
+
+export interface IConvocatory {
+  _id: number;
+  titulo: string;
+  estado: string;
+  correo: string;
+  fecha_invitacion: Date;
+  fecha_presentacion: Date;
+  fecha_ampliacion: Date;
+  fecha_consultas: Date;
+  docs: Idocument[];
+}

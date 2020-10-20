@@ -1,33 +1,47 @@
+ 
  <!-- LATEST NEWS START -->
- <div class="container">
+  <!-- LATEST NEWS START -->
+  <div class="container">
     <div class="section-title">
         <h2>Noticias destacadas</h2>
         <p>Noticias de nuestra empresa así como de sus proyectos y logros.</p>
     </div>
-    <owl-carousel [options]="SlideOptions" class="news-carousel slider hover-effects image-hover"> 
     
-      <div class="slide" *ngFor="let slide of slides">
-          <div class="blog-preview">
-            <div class="thumbnail-box">
-                <figure class="bp-thumbnail"><a href="#"><img src="{{slide.image}}" alt=""></a></figure> 
-                <div class="post-date">
-                    <p>10<br><span>Junio</span></p>
-                </div>
-            </div> 
-            <div class="bp-caption">
-                <h3>{{slide.title}}</h3>
-                <div class="social-interaction">
-                    <div class="si-author"><p>Administración</p></div>
-                    <div class="si-comments"><p> Comentarios</p></div>
-                </div>
-                <p>{{slide.detail}}</p>
-                <h5><a href="javascript:void(0)">Leer más</a></h5>
-            </div>
-        </div>
-      
+    
+    <owl-carousel [options]="SlideOptions" [items]="publications" [carouselClasses]="['owl-theme', 'row', 'sliding']" class="news-carousel slider hover-effects image-hover">
      
-    </div>
-</owl-carousel> 
+        <div class="slide" *ngFor="let slide of publications;let i = index" >
+           <div class="blog-preview">
+                 <div class="thumbnail-box">
+                     <figure class="bp-thumbnail">
+                         
+
+                         <a *ngIf="slide.lnk" [href]="slide.lnk" target="_blank" ><img [src]="slide.image | image: 'publication'" alt=""></a>
+                          <a *ngIf="!slide.lnk" [routerLink]="['/new', slide._id]" ><img [src]="slide.image | image: 'publication'" alt=""></a>
+                     </figure> 
+                     <div class="post-date">
+                         <p>{{slide.date | formatDate: 'day'}}<br><span>{{slide.date | formatDate: 'month'}}</span></p>
+                     </div>
+                 </div> 
+                 <div class="bp-caption">
+                     <h3>{{slide.title | truncateText: 75}}</h3>
+                     <div class="social-interaction">
+                         <div class="si-author"><p>{{slide.category.name}}</p></div>
+                         <!-- <div class="si-comments"><p> Comentarios</p></div> -->
+                     </div>
+                     <p>{{slide.description | truncateText: 180 }}</p>
+                     <h5>
+                         
+                         <a *ngIf="slide.lnk" [href]="slide.lnk" target="_blank" >Leer más</a>
+                          <a *ngIf="!slide.lnk" [routerLink]="['/new', slide._id]" >Leer más</a>
+                     </h5>
+                 </div>
+             </div>
+         </div>
+   
+   
+    </owl-carousel>
+
 </div>
 
 <!-- LATEST NEWS END -->
@@ -35,6 +49,7 @@
 
 
 
+  
 
 
 <!-- start featured-project-section-s2 -->

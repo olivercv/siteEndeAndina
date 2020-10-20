@@ -16,7 +16,7 @@ export class EntreriosComponent implements OnInit {
       numbers: 1,
       src : '../../../assets/img/gallery/pter/gallery1.jpg',
       thumb : '../../../assets/img/gallery/pter/gallery1.jpg',
-      title: 'Planta Entre Rios',
+      title: 'Planta Entre Ríos',
       caption: 'Vista Panorámica de la planta',
       url: '#'
     },
@@ -32,15 +32,15 @@ export class EntreriosComponent implements OnInit {
       numbers: 3,
       src : '../../../assets/img/gallery/pter/gallery3.jpg',
       thumb : '../../../assets/img/gallery/pter/gallery3.jpg',
-      title: 'Termoeléctrica Entre Rios',
-      caption: 'Vista Tuberias Termoeléctricas',
+      title: 'Termoeléctrica Entre Ríos',
+      caption: 'Vista Tuberías Termoeléctricas',
       url: '#'
     },
     {
       numbers: 4,
       src : '../../../assets/img/gallery/pter/gallery4.jpg',
       thumb : '../../../assets/img/gallery/pter/gallery4.jpg',
-      title: 'Termoeléctrica Entre Rios',
+      title: 'Termoeléctrica Entre Ríos',
       caption: 'Vista Lateral de la planta',
       url: '#'
     },
@@ -48,7 +48,7 @@ export class EntreriosComponent implements OnInit {
       numbers: 5,
       src : '../../../assets/img/gallery/pter/gallery5.jpg',
       thumb : '../../../assets/img/gallery/pter/gallery5.jpg',
-      title: 'Termoeléctrica Entre Rios',
+      title: 'Termoeléctrica Entre Ríos',
       caption: 'Vista Aérea de la Planta',
       url: '#'
     },
@@ -56,7 +56,7 @@ export class EntreriosComponent implements OnInit {
       numbers: 6,
       src : '../../../assets/img/gallery/pter/gallery6.jpg',
       thumb : '../../../assets/img/gallery/pter/gallery6.jpg',
-      title: 'Termoeléctrica Entre Rios',
+      title: 'Termoeléctrica Entre Ríos',
       caption: 'Vista panorámica de las torres de electricidad',
       url: '#'
     },
@@ -64,7 +64,7 @@ export class EntreriosComponent implements OnInit {
       numbers: 7,
       src : '../../../assets/img/gallery/pter/gallery7.jpg',
       thumb : '../../../assets/img/gallery/pter/gallery7.jpg',
-      title: 'Turbinas Entre Rios',
+      title: 'Turbinas Entre Ríos',
       caption: 'Torres de electricidad',
       url: '#'
     },
@@ -72,8 +72,8 @@ export class EntreriosComponent implements OnInit {
       numbers: 8,
       src : '../../../assets/img/gallery/pter/gallery8.jpg',
       thumb : '../../../assets/img/gallery/pter/gallery8.jpg',
-      title: 'Termoeléctrica Entre Rios',
-      caption: 'Vista al atardecer de la planta',
+      title: 'Termoeléctrica Entre Ríos',
+      caption: 'Vista Subestación de la planta',
       url: '#'
     }
   ];

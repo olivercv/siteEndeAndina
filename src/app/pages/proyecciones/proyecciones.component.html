@@ -25,10 +25,10 @@
 
             <div class="col-lg-6 full-prod-layer">
                 <div class="fc-content fc-left-align">
-                    <h5 >Proyecciones</h5>
+                    <h5 style="color: rgb(245, 197, 41);" >Proyecciones</h5>
                     <h2><span>Generación inyectada por planta (MWh)</span></h2>
                     
-                      <p class="text-white">Genración de nergía proyecta para los siguientes 4 años</p>
+                      <p class="text-white">Generación de energía proyecta para los siguientes 4 años</p>
                       
                     
                     
@@ -40,17 +40,15 @@
             <div class="col-lg-6 full-caption-layer">
                 <div class="fc-content">
                 <h3>Utilidad de la empresa (Bs)</h3>
-                <div style="display: block">
-                    <canvas baseChart  
-                                [datasets]="generacionData"
-                                [labels]="proyectadaChartLabels"
-                                [options]="lineChartOptions"
-                                [colors]="lineChartColors"
-                                [legend]="lineChartLegend"
-                                [chartType]="lineChartType"
-                                (chartHover)="chartHovered($event)"
-                                (chartClick)="chartClicked($event)"></canvas>
-                </div>
+                <canvas baseChart
+                                    [datasets]="proyectadaData"
+                                    [labels]="proyectadaChartLabels"
+                                    [options]="lineChartOptions"
+                                    [colors]="barChartColors"
+                                    [legend]="lineChartLegend"
+                                    [chartType]="barChartType"
+                                    (chartHover)="chartHovered($event)"
+                                    (chartClick)="chartClicked($event)"></canvas>
               
             </div>
           </div>
@@ -60,22 +58,26 @@
             <div class="order-last order-md-12 col-lg-6 full-caption-layer">
                 <div class="fc-content">
                     <h3>Energía Inyectada (MWh)</h3>
-                    
-                        <canvas baseChart
-                                    [datasets]="proyectadaData"
+
+                    <div style="display: block">
+                        <canvas baseChart  
+                                    [datasets]="generacionData"
                                     [labels]="proyectadaChartLabels"
                                     [options]="lineChartOptions"
-                                    [colors]="barChartColors"
+                                    [colors]="lineChartColors"
                                     [legend]="lineChartLegend"
-                                    [chartType]="barChartType"
+                                    [chartType]="lineChartType"
                                     (chartHover)="chartHovered($event)"
                                     (chartClick)="chartClicked($event)"></canvas>
+                    </div>
+
+                        
                     
                 </div>
               </div>
               <div class="order-first order-md-12 col-lg-6 full-prod-layer-alt">
                 <div class="fc-content">
-                    <h5>Proyecciones</h5>
+                    <h5 style="color:  rgb(245, 197, 41)" >Proyecciones</h5>
                     <h2 ><span>Utilidad proyectada</span></h2>
                     
                       <p class="text-white">El Cuadro muestra las utilidades de la empresa los proximos 4 años</p>

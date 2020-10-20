@@ -15,12 +15,20 @@
              <!-- BLOG CONTENT START -->
               <div class="col-lg-8 col-xl-9">
                   
-                  <div class="post-preview" *ngFor="let new of publications">
-                    <figure class="post-preview-img"><a href="javascript:void(0)"><img [src]="new.image | image: 'publication'" alt=""></a></figure>
+                  <div class="post-preview" *ngFor="let new of publications | objFilter: filterPost">
+                    <figure *ngIf="new.image" class="post-preview-img">
+                      <a *ngIf="new.lnk" [href]="new.lnk" target="_blank"><img [src]="new.image | image: 'publication'" alt=""></a>
+                      <a *ngIf="!new.lnk" [routerLink]="['/new', new._id]"><img [src]="new.image | image: 'publication'" alt=""></a>
+                    
+                    </figure>
                     <div class="pp-caption">
-                        <h3><a href="javascript:void(0)">{{new.title}}</a></h3>
-                        <p>{{ new.description }}</p>
-                        <h4 class="link"><a href="javascript:void(0)">Leer más</a></h4>
+                        <h3><a *ngIf="new.lnk" [href]="new.lnk" target="_blank">{{new.title}}</a></h3>
+                        <h3><a *ngIf="!new.lnk" [routerLink]="['/new', new._id]">{{new.title}}</a></h3>
+                        <p>{{ new.description | truncateText: 300 }}</p>
+                        <h4 class="link">
+                          <a *ngIf="new.lnk" [href]="new.lnk" target="_blank" >Leer noticia completa</a>
+                          <a *ngIf="!new.lnk" [routerLink]="['/new', new._id]" >Leer noticia completa</a>
+                        </h4>
                         <hr class="post">
                         <div class="pp-bottom">
                             <div class="about-author">
@@ -41,7 +49,7 @@
                     
             </div>
                 <!-- PAGINATION START -->
-                <div class="site-pagination">
+                <!-- <div class="site-pagination">
                     <nav aria-label="Page navigation example">
                       <ul class="pagination">
                         <li class="page-item">
@@ -57,7 +65,7 @@
                         </li>
                       </ul>
                     </nav>
-                </div> 
+                </div>  -->
                 <!-- PAGINATION END -->
               </div>
               <!-- BLOG SIDEBAR START -->
@@ -65,19 +73,19 @@
                   <aside>
                     <div class="form-group blog-search">
                         <span class="fa fa-search form-control-feedback"></span>
-                        <input type="text" class="form-control" placeholder="Buscar">
+                        <input type="text" class="form-control" [(ngModel)]="filterPost" placeholder="Buscar">
                       </div>
                       <div class="aside-list-group">
                           <h4>Categorías</h4>
                         <ul class="list-group list-group-flush" >
                             <li class="list-group-item" *ngFor="let cat of categories" >
                               <a href="javascript:void(0)">{{cat.name}}</a>
-                            <span class="badge badge-primary badge-pill">0</span>
+                            <span class="badge badge-primary badge-pill">1</span>
                           </li>
                           
                         </ul>
                       </div>
-                      <div class="aside-related-posts">
+                      <!-- <div class="aside-related-posts">
                         <h4>Relacionados</h4>
                         <div class="aside-related-posts">
                           <div class="media">
@@ -103,7 +111,7 @@
                           </div>
                          
                        </div>
-                      </div>
+                      </div> -->
                       <div class="aside-tags">
                         <h4>Tags</h4>
                         <a class="btn btn-tags" href="javascript:void(0)" role="button">Termoeléctrica</a>

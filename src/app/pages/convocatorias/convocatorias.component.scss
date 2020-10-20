@@ -44,6 +44,7 @@ $dg-wide: 1000px;
   box-shadow: 0 1px 25px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.06);
   border-bottom: 1px solid #d2d2d2;
   border-left: 1px solid #dadada;
+  min-height: 350px;
 //   margin: 0 1em 2em 1em;
   
   // -- Card in Grid View 
@@ -73,8 +74,8 @@ $dg-wide: 1000px;
     @include dg-narrow { justify-content :center;}
     
     img {
-      width: 100%;
-      max-width: 300px;   
+      width: 50%;
+      max-width: 200px;   
       margin: 0 auto;
     }
 
@@ -89,7 +90,7 @@ $dg-wide: 1000px;
     // --- Icon Box in List View 
     .download-cards[data-view='list-view'] & {    
       @include dg-narrow {
-        width: 200px;
+        width: 170px;
         position: absolute;    
         top: 0;
         left: 0;
@@ -106,7 +107,7 @@ $dg-wide: 1000px;
     
     // -- Content Box in List View
     .download-cards[data-view="list-view"] & {
-      @include dg-narrow { padding-left: calc(200px + 2em); }
+      @include dg-narrow { padding-left: calc(160px + 2em); }
     } // -- End Content Box in List View
     
     &__catagory {
@@ -177,3 +178,188 @@ $dg-wide: 1000px;
   
   }
 }
+
+
+
+//tabla 
+
+table {
+  font-family: 'Poppins', sans-serif;
+	width: 100%; 
+	border-collapse: collapse; 
+	margin:10px auto;
+	}
+
+  .table-fixed{
+ 
+    tbody{
+      height:120px;
+      overflow-y:auto;
+      width: 100%;
+      }
+    
+    
+  }
+
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+	background: #eee; 
+	}
+
+th { 
+	background: #11505d; 
+	color: white; 
+	font-weight: 500; 
+	}
+
+td, th { 
+	padding: 10px; 
+	border: 1px solid #ccc; 
+	text-align: left; 
+	font-size: 15px;
+  }
+  
+  td a.btn {
+    font-size: 12px!important;
+    text-transform: capitalize;
+  }
+
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	table { 
+	  	width: 100%; 
+	}
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		/* Label the data */
+		content: attr(data-column);
+
+		color: #000;
+		font-weight: bold;
+	}
+
+}
+
+
+// search box
+
+/* Styles for wrapping the search box */
+
+.main {
+  width: 100%;
+  margin: 50px auto;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+.form-control {
+  font-size: 15px!important;
+}
+.input-group-append button {
+  font-size: 15px!important;
+}
+/* Bootstrap 4 text input with search icon */
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
+
+// lista
+
+.lista{
+  margin-top: 1rem;
+}   
+  
+.lista p{
+  font-size: 14px;
+  line-height: 1.6;
+}
+  
+.lista-files .list-group-item {
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  margin-bottom: -1px;
+  background-color: #F5F5F5;
+  border: none;
+  border-radius: 0px;
+  margin-bottom: 5px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  text-align: left;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+  
+.lista-files .list-group-item:hover {
+  background-color: #11505d;
+  color: #FFF;
+} 
+
+.lista-files{
+  margin-top: 1rem;
+}
+  
+.lista-files .list-group-item .fas{
+  margin-right: 15px;
+  color: #94bc20;
+  transition: 0.3s ease;
+}   
+  
+.lista-files .list-group-item:hover .fas{
+  margin-right: 15px;
+  color: #FFF;
+} 
+

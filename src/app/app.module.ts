@@ -54,6 +54,10 @@ import { SolicitudInformacionComponent } from './pages/solicitud-informacion/sol
 import { AdquisicionesComponent } from './pages/adquisiciones/adquisiciones.component';
 import { ConvocatoriasComponent } from './pages/convocatorias/convocatorias.component';
 import { PipesModule } from './pipes/pipes.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ModalDialogComponent } from './components/modal-dialog/modal-dialog.component';
+import { NewComponent } from './pages/new/new.component';
+
 
 
 
@@ -108,10 +112,14 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     DenunciaComponent,
     SolicitudInformacionComponent,
     AdquisicionesComponent,
-    ConvocatoriasComponent
+    ConvocatoriasComponent,
+    ModalDialogComponent,
+    NewComponent,
+ 
   ],
   imports: [
     BrowserModule,
+    NgbModule,
     FormsModule,
     AppRoutingModule,
     LightboxModule,

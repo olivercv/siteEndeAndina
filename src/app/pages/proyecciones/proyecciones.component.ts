@@ -27,7 +27,7 @@ export class ProyeccionesComponent implements OnInit {
   ];
 
   public proyectadaData: ChartDataSets[] = [
-    { data: [135010557, 108304631, 78461532,  104375853], label: 'PTERI' }
+    { data: [135010557, 108304631, 78461532,  104375853], label: 'Utilidad proyectada' }
   ];
   public proyectadaChartLabels: Label[] = ['2020', '2021', '2022', '2023'];
 

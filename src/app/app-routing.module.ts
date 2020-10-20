@@ -29,6 +29,7 @@ import { DenunciaComponent } from './pages/denuncia/denuncia.component';
 import { SolicitudInformacionComponent } from './pages/solicitud-informacion/solicitud-informacion.component';
 import { AdquisicionesComponent } from './pages/adquisiciones/adquisiciones.component';
 import { ConvocatoriasComponent } from './pages/convocatorias/convocatorias.component';
+import { NewComponent } from './pages/new/new.component';
 
 
 const routes: Routes = [
@@ -44,6 +45,7 @@ const routes: Routes = [
   { path: 'ccptwar',  component: CcptwarComponent },
   { path: 'ciclos',  component: CiclosComponent },
   { path: 'news',  component: NewsComponent },
+  { path: 'new/:id',  component: NewComponent },
   { path: 'contact',  component: ContactComponent },
   { path: 'canal',  component: VideotubeComponent },
   { path: 'history',  component: HistoryComponent },
@@ -68,7 +70,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {initialNavigation: 'enabled', useHash: false, scrollPositionRestoration: 'enabled'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

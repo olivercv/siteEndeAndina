@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class YoutubeService {
 
   private url: string = 'https://www.googleapis.com/youtube/v3';
-  private apiKey: string = 'AIzaSyCdcul7yBfSYlKOrDoXeBPok3WSU--nR8k';
+  private apiKey: string = 'AIzaSyDRhuHPfsTrfVFs5nFT71HNkj5B5FDafao';
   private canal: string = 'UCTO60otE9hhDtDXS5II9cSQ';
 
   constructor(private http: HttpClient) { }

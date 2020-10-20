@@ -22,7 +22,7 @@ export class DelsurComponent implements OnInit {
       src : '../../../assets/img/gallery/ptsur/gallery2.jpg',
       thumb : '../../../assets/img/gallery/ptsur/gallery2.jpg',
       title: 'Termoeléctrica Del Sur',
-      caption: 'Areas Maturales de esparsimiento',
+      caption: 'Áreas naturales de esparcimiento',
       url: '#'
     },
     {
@@ -38,7 +38,7 @@ export class DelsurComponent implements OnInit {
       src : '../../../assets/img/gallery/ptsur/gallery4.jpg',
       thumb : '../../../assets/img/gallery/ptsur/gallery4.jpg',
       title: 'Termoeléctrica Del Sur',
-      caption: 'Vista Lateral de las turninas',
+      caption: 'Vista Lateral de las turbinas',
       url: '#'
     },
     {
@@ -54,7 +54,7 @@ export class DelsurComponent implements OnInit {
       src : '../../../assets/img/gallery/ptsur/gallery6.jpg',
       thumb : '../../../assets/img/gallery/ptsur/gallery6.jpg',
       title: 'Termoeléctrica Del Sur',
-      caption: 'pasillo de ingreso a la planta',
+      caption: 'Pasillo de ingreso a la planta',
       url: '#'
     },
     {
@@ -62,7 +62,7 @@ export class DelsurComponent implements OnInit {
       src : '../../../assets/img/gallery/ptsur/gallery7.jpg',
       thumb : '../../../assets/img/gallery/ptsur/gallery7.jpg',
       title: 'Turbinas Del Sur',
-      caption: 'vista panoramica lateral de la planta',
+      caption: 'Vista panorámica lateral de la planta',
       url: '#'
     },
     {
@@ -70,7 +70,7 @@ export class DelsurComponent implements OnInit {
       src : '../../../assets/img/gallery/ptsur/gallery8.jpg',
       thumb : '../../../assets/img/gallery/ptsur/gallery8.jpg',
       title: 'Termoeléctrica Del Sur',
-      caption: 'Area habitacional',
+      caption: 'Área habitacional',
       url: '#'
     },
     {
@@ -78,7 +78,7 @@ export class DelsurComponent implements OnInit {
       src : '../../../assets/img/gallery/ptsur/gallery9.jpg',
       thumb : '../../../assets/img/gallery/ptsur/gallery9.jpg',
       title: 'Termoeléctrica Del Sur',
-      caption: 'Trasporte de electricidad',
+      caption: 'Vista de subestación de la planta',
       url: '#'
     },
     {

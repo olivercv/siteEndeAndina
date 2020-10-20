@@ -1,47 +1,31 @@
 import { Component, OnInit } from '@angular/core';
-
+import { IPublication } from 'src/app/interfaces/interfaces';
+import { GLOBAL } from '../../config/global.service';
+import { PublicationsService } from 'src/app/services/publications.service';
+import { CategoriesService } from 'src/app/services/categories.service';
+import { Router } from '@angular/router';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-carrusel',
   templateUrl: './carrusel.component.html',
   styleUrls: ['./carrusel.component.scss']
 })
-export class CarruselComponent implements OnInit {s
-
-slides = [
-  {
-    number: '01.',
-    image : '../../../assets/img/images/post-preview1.jpg',
-    title: 'UNICOM/ENDE CORPORACIÓN: ENDE SE REUNIÓ CON EMBAJADOR DE BOLIVIA EN BRASIL',
-    detail: 'Ejecutivos de ENDE Corporación y el embajador de Bolivia en Brasil,  Wilfredo Rojo Parada, se reunieron con el objetivo de retomar la agenda energética Bolivia – Brasil',
-    url: '#'
-  },
-  {
-    number: '02.',
-    image : '../../../assets/img/images/post-preview2.jpg',
-    title: 'UNICOM/ENDE CORPORACIÓN: WEBINAR INTERNACIONAL “CYBERSEGURIDAD INDUSTRIAL”',
-    detail: 'ENDE Corporación, con el objetivo de conocer los riesgos y prevenciones que se deben seguir y con una visión que apunta a mejorar sus niveles de seguridad de información',
-    url: '#'
-  },
-  {
-    number: '03.',
-    image : '../../../assets/img/images/post-preview3.jpg',
-    title: 'UNICOM/ENDE TRANSMISIÓN: ENDE TRANSMISIÓN CONSTRUYE LÍNEA ELÉCTRICA',
-    detail: 'ENDE Transmisión está ejecutando el proyecto “Línea de Transmisión 230 kV Los Troncos – Guarayos – Trinidad”, el mismo que permitirá extender el Sistema Troncal Interconectado (STI) ',
-    url: '#'
-  }
-];
-
+export class CarruselComponent implements OnInit {s;
+  loading = true;
+  publications: IPublication[] = [];
+  total = 0;
+  to = 0;
+  ruta = GLOBAL.urlServices;
 
   // SlideOptions = { items: 1, dots: true, nav: true };
   // CarouselOptions = { items: 3, dots: true, nav: true };
-
-  SlideOptions = {
+  SlideOptions: OwlOptions = {
     autoplay: false,
     smartSpeed: 100,
     margin: 0,
-    loop:true,
-    autoplayHoverPause:true,
+    loop: true,
+    autoplayHoverPause: true,
     dots: false,
     responsive: {
         0 : {
@@ -61,9 +45,26 @@ slides = [
         }
     }
   };
-  constructor() { }
+
+  constructor(
+    public publicationsService: PublicationsService,
+    public categoriesService: CategoriesService,
+    public router: Router
+  ) { }
 
   ngOnInit(): void {
+    this.getPublications();
   }
 
+  getPublications() {
+    this.loading = true;
+    this.publicationsService.getPublications( this.to)
+    .subscribe( (result: any) => {
+      this.publications = result;
+      // this.publications.push(...result);
+      this.loading = false;
+    });
+  }
+
+ 
 }

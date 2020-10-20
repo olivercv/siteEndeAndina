@@ -1,102 +1,111 @@
 <div class="sections">
-    <div class="container">
-        <div class="pages-title">
-            <h1>Gestión <br> <span>Convocatorias</span></h1>
-            <p><a href="#">Inicio</a> &nbsp; > &nbsp; <a href="#">Convocatorias</a></p>
-        </div>
-    </div>  
+  <div class="container">
+      <div class="pages-title">
+          <h1>Gestión <br> <span>Convocatorias</span></h1>
+          <p><a href="#">Inicio</a> &nbsp; > &nbsp; <a href="#">Convocatorias</a></p>
+      </div>
+  </div>  
 </div>
 
 <!-- CONTENT START -->
 <section>
-    <div class="container">
-        <div class="row">
-          <!-- SIDEBAR START -->
-          <div class="order-last order-md-3 col-lg-4  col-xl-3 space-break">
-            <div class="sidebar-list">                
-                <div class="list-group">
-                  <a  class="list-group-item d-flex justify-content-between align-items-center" (click)="showDocumets('vigentes')" [ngClass]="{ active: conv == 1}">
-                    Convocatorias Vigentes
-                    <span class="badge"><i class="fas fa-chevron-right"></i></span>
-                  </a>
-                  <a  class="list-group-item d-flex justify-content-between align-items-center" (click)="showDocumets('concluidas')" [ngClass]="{ active: conv == 2}" >
-                    Convocatorias concluidas
-                    <span class="badge"><i class="fas fa-chevron-right"></i></span>
-                  </a>
-                  <a  class="list-group-item d-flex justify-content-between align-items-center" (click)="showDocumets('de personal')" [ngClass]="{ active: conv ==  3}" >
-                    Convocatorias de personal
-                    <span class="badge"><i class="fas fa-chevron-right"></i></span>
-                  </a>
-                 
-                </div>
-            </div>
+  <div class="container">
+      <div class="row">
+        
 
-            <!-- <div class="brochures">
-                <h4>Titulo</h4>  
-                <p>Alguna informacion general.</p>
-                
-            </div> -->
+        <!-- SIDEBAR START -->
+        <div class="order-last order-md-3 col-lg-4  col-xl-3 space-break">
+          <h4>Filtrar convocatorias</h4>
+          <br>
+          <div class="form-group blog-search">
+            <span class="fa fa-search form-control-feedback"></span>
+            <input type="text" class="form-control" [(ngModel)]="filterDoc" placeholder="Buscar">
           </div>
-          <!-- SIDEBAR END -->
-          
-          <!-- PROJECT CONTENT START -->
-          <div class="order-first order-md-9 col-lg-8 col-xl-9">
-            
-            <div class="solution-content">
-                <h2>Convocatorias {{title}}</h2>
-                
-            </div>
 
-            <div data-view="list-view" class="download-cards"  >
-                <article class="download-card" *ngFor="let doc of documents">
-                  <div class="download-card__icon-box">
-                      <img src="../assets/img/download.svg" />
-                    <div class="download-dates" >
-                        <h2 class="download-card__content-box__catagory">Inicio de Proceso</h2>
-                        <p class="download-card__content-box__description" > {{doc.Inital}}</p>
-                        <h2 class="download-card__content-box__catagory">Reunión de Aclaracion:</h2>
-                        <p class="download-card__content-box__description" > {{doc.meeting}}</p>
-                        <h2 class="download-card__content-box__catagory">Fecha de presentación de Propuestas:</h2>
-                        <p class="download-card__content-box__description" > {{doc.presentation}}</p>
-                    </div>
-                     
-                </div>
-                  <div class="download-card__content-box">
-                    <div class="content">
-                      <h2 class="download-card__content-box__catagory">{{doc.section}}</h2>
-                      <h3 class="download-card__content-box__title">{{doc.title}}</h3>
-                      <p class="download-card__content-box__description">{{doc.detail}}</p>
-                      
-                        <div class="brochures-files">
-                            <div class="list-group" *ngFor="let file of doc.docs">
-                            <a href="{{file.url}}" class="list-group-item" download >
-                                <i class="fas {{file.type}}"></i> {{file.title}}
-                            </a>
-                            
-                            </div>
-                        </div>
-
-
-                     
-                    </div>
- 
-                  </div>
-                </article>
-                
-
+          <div class="sidebar-list">                
+              <div class="list-group">
+                <a  class="list-group-item d-flex justify-content-between align-items-center" (click)="showDocumets('vigente')" [ngClass]="{ active: conv == 1}">
+                  Convocatorias Vigentes
+                  <span class="badge"><i class="fas fa-chevron-right"></i></span>
+                </a>
+                <a  class="list-group-item d-flex justify-content-between align-items-center" (click)="showDocumets('adjudicado')" [ngClass]="{ active: conv == 2}">
+                  Convocatorias Adjudicados
+                  <span class="badge"><i class="fas fa-chevron-right"></i></span>
+                </a>
+                <a  class="list-group-item d-flex justify-content-between align-items-center" (click)="showDocumets('desierto')" [ngClass]="{ active: conv ==  3}" >
+                  Convocatorias desiertos
+                  <span class="badge"><i class="fas fa-chevron-right"></i></span>
+                </a>
+               
               </div>
-
-              <div class="alert alert-warning" role="alert" *ngIf="documents == ''" >
-                <p>No se encontraron documentos para esta sección</p> 
-              </div>
-           
           </div>
-          <!-- PROJECT CONTENT END -->
 
-
-          
-
+          <!-- <div class="brochures">
+              <h4>Titulo</h4>  
+              <p>Alguna informacion general.</p>
+              
+          </div> -->
         </div>
-    </div>
+        <!-- SIDEBAR END -->
+        
+        <!-- PROJECT CONTENT START -->
+        <div class="order-first order-md-9 col-lg-8 col-xl-9">
+          
+          <div class="solution-content">
+              <h2>Convocatorias {{title}}</h2>
+              
+          </div>
+
+          <div data-view="list-view" class="download-cards"  >
+              <article class="download-card" *ngFor="let doc of documents | docsFilter: filterDoc">
+                <div class="download-card__icon-box">
+                    <!-- <img src="../assets/img/download.svg"  width="100px" /> -->
+                  <div class="download-dates" >
+                      <h2 class="download-card__content-box__catagory">Inicio de Proceso</h2>
+                      <p class="download-card__content-box__description" > {{doc.fecha_invitacion | date}}</p>
+                      <h2 class="download-card__content-box__catagory">Reunión de Aclaracion:</h2>
+                      <p class="download-card__content-box__description" > {{doc.fecha_consultas | date}}</p>
+                      <h2 class="download-card__content-box__catagory">Fecha de presentación de Propuestas:</h2>
+                      <p class="download-card__content-box__description" > {{doc.fecha_presentacion | date}}</p>
+                  </div>
+                   
+              </div>
+                <div class="download-card__content-box">
+                  <div class="content">
+                    <h2 class="download-card__content-box__catagory">{{doc.correo}}</h2>
+                    <h3 class="download-card__content-box__title">{{doc.titulo}}</h3>
+                    <p class="download-card__content-box__description">{{doc.estado}}</p>
+                    
+                      <div class="lista-files">
+                          <div class="list-group" *ngFor="let file of doc.docs">
+                          <a href="javascript:void(0)" (click)="downloadPdf(file.sfile, file.titulo)" class="list-group-item" download >
+                              <i class="fas fa-file-pdf"></i> {{file.titulo}}
+                          </a>
+                          
+                          </div>
+                      </div>
+
+
+                   
+                  </div>
+
+                </div>
+              </article>
+              
+
+            </div>
+
+            <div class="alert alert-warning" role="alert" *ngIf="documents == null" >
+              <p>No se encontraron documentos para esta sección</p> 
+            </div>
+         
+        </div>
+        <!-- PROJECT CONTENT END -->
+
+
+        
+
+      </div>
+  </div>
 </section> 
 <!-- CONTENT START -->

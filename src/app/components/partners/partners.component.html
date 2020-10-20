@@ -3,9 +3,9 @@
 <div class="container-fluid clients-wide-section">
     <div class="container">
         <owl-carousel [options]="SlideOptions" class="clients-carousel slider">
-          <div class="slide" *ngFor="let img of Images">
-              <a href="#">
-                <figure class="clients-logo"><img src="{{img}}" alt=""></figure>
+          <div class="slide" *ngFor="let slide of slides">
+              <a [href]="slide.url" target="_blank" >
+                <figure class="clients-logo"><img src="{{slide.image}}" alt=""></figure>
               </a>
               
           </div>

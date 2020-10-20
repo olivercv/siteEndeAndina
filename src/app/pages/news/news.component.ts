@@ -4,6 +4,7 @@ import { IPublication } from 'src/app/interfaces/interfaces';
 import { GLOBAL } from '../../config/global.service';
 import { ICategory } from '../../interfaces/interfaces';
 import { CategoriesService } from '../../services/categories.service';
+import { Router, NavigationEnd } from '@angular/router';
 
 
 @Component({
@@ -14,7 +15,7 @@ import { CategoriesService } from '../../services/categories.service';
 export class NewsComponent implements OnInit {
 
   loadingCat = true;
-  
+  filterPost: string;
   categories: ICategory[] = [];
   totalCat = 0;
   toCat = 0;
@@ -26,8 +27,18 @@ export class NewsComponent implements OnInit {
   ruta = GLOBAL.urlServices;
 
   constructor( public publicationsService: PublicationsService,
-               public categoriesService: CategoriesService
+               public categoriesService: CategoriesService,
+               public router: Router
     ) {
+      // router.events.subscribe(s => { 
+      //   if (s instanceof NavigationEnd) { 
+      //   const tree = router.parseUrl(router.url); 
+      //   if (tree.fragment) {
+      //    const element = document.querySelector("#" + tree.fragment); 
+      //    if (element) { element.scrollIntoView(true); } 
+      //   }
+      //   }
+      //  });
    }
 
   ngOnInit(): void {
@@ -40,6 +51,7 @@ export class NewsComponent implements OnInit {
     this.loading = true;
     this.publicationsService.getPublications( this.to)
     .subscribe( (result: any) => {
+      // console.log("REsultados publicaciones", result);
       this.publications.push(...result);
       this.loading = false;
     });
@@ -49,10 +61,12 @@ export class NewsComponent implements OnInit {
     this.loadingCat = true;
     this.categoriesService.getCategories( this.toCat)
         .subscribe( (res: any) => {
-          console.log('Llega al componente', res);
+          // console.log('Llega al componente', res);
           this.categories.push(...res);
           this.loadingCat = false;
         });
   }
+
+  
 
 }
