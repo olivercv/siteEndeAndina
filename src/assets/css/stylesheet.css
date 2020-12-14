@@ -149,7 +149,7 @@ h4, .h4 {
 
 h5, .h5 {
     font-size: 0.70rem;
-    color: #94bc20;
+    color: #478790;
     font-weight: 500;
     text-transform: uppercase;
 }
@@ -177,7 +177,7 @@ a {
 }
 
 a:hover {
-	color: #b9e831;
+	color: #518C86;
     text-decoration: none;
 }
 
@@ -235,14 +235,14 @@ section{
 } 
 @keyframes animate2 {
   0% {
-    box-shadow: inset #94bc20 0 0 0 17px;
+    box-shadow: inset #478790 0 0 0 17px;
     transform: rotate(-140deg);
   }
   50% {
     box-shadow: inset #11505d 0 0 0 2px;
   }
   100% {
-    box-shadow: inset #94bc20 0 0 0 17px;
+    box-shadow: inset #478790 0 0 0 17px;
     transform: rotate(140deg);
   }
 }
@@ -275,7 +275,7 @@ section{
 a.btn-hover-corner {
   display: inline-block;
   text-decoration: none;
-  color: #94bc20;
+  color: #478790;
   font-weight: bold;
   font-size: 14px;
   position: relative;
@@ -291,8 +291,8 @@ a.btn-hover-corner:before {
   display: block;
   height: 100%;
   width: 100%;
-  border-bottom: 2px solid #94bc20;
-  border-left: 2px solid #94bc20;
+  border-bottom: 2px solid #478790;
+  border-left: 2px solid #478790;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -304,8 +304,8 @@ a.btn-hover-corner:after {
   display: block;
   height: 100%;
   width: 100%;
-  border-top: 2px solid #94bc20;
-  border-right: 2px solid #94bc20;
+  border-top: 2px solid #478790;
+  border-right: 2px solid #478790;
   position: absolute;
   right: 0;
   top: 0;
@@ -324,22 +324,22 @@ a.btn-hover-corner:focus, .a.btn-hover-corner.focus {
 
 a.btn-hover-corner.disabled, .a.btn-hover-corner:disabled {
   color: #fff;
-  background-color: #94bc20;
-  border-color: #94bc20;
+  background-color: #478790;
+  border-color: #478790;
 }
 
 .btn-custom {
-  color: #b9e831;
+  color: #518C86;
   transition: 0.9s;
   padding: 0.3rem 1.125rem;
   font-size: 0.60rem;      
   background: transparent;
-  border: solid 2px #94bc20;
+  border: solid 2px #478790;
 }
 
 .btn-custom:hover {
   color: #FFF;
-  background: #94bc20; 
+  background: #478790; 
 }
 
 .btn-custom:focus, .btn-custom.focus {
@@ -376,7 +376,7 @@ a.btn-slider {
   transition: 0.3s ease;
   margin-bottom: 0px;
   font-family: 'Poppins', sans-serif;
-  background-color: #94bc20;
+  background-color: #478790;
 }
 
 a.btn-slider:before {
@@ -384,8 +384,8 @@ a.btn-slider:before {
   display: block;
   height: 100%;
   width: 100%;
-  border-bottom: 2px solid #94bc20;
-  border-left: 2px solid #94bc20;
+  border-bottom: 2px solid #478790;
+  border-left: 2px solid #478790;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -397,8 +397,8 @@ a.btn-slider:after {
   display: block;
   height: 100%;
   width: 100%;
-  border-top: 2px solid #94bc20;
-  border-right: 2px solid #94bc20;
+  border-top: 2px solid #478790;
+  border-right: 2px solid #478790;
   position: absolute;
   right: 0;
   top: 0;
@@ -419,8 +419,8 @@ a.btn-slider:focus, .a.btn-slide.focus {
 
 a.btn-slider.disabled, .a.btn-slide:disabled {
   color: #fff;
-  background-color: #94bc20;
-  border-color: #94bc20;
+  background-color: #478790;
+  border-color: #478790;
 }
 
 /*====================================================
@@ -449,7 +449,7 @@ a.btn-slider.disabled, .a.btn-slide:disabled {
 .header-left{
     float: left;
     margin-bottom: 5px;
-    background-color: #94bc20;
+    background-color: #478790;
     width: 680px;
     margin-left: -450px;
     text-align: right;
@@ -566,7 +566,7 @@ footer .container{
 }
 
 .footer-col h4:after {
-	background: #94bc20; 
+	background: #478790; 
 	content: '';
 	display: block;
 	height: 3px;
@@ -584,7 +584,7 @@ footer .container{
 .fi-fas{
     float: left;
     margin-right: 15px;
-    color: #94bc20;
+    color: #478790;
     line-height: 0.5;
     margin-bottom: 10px;
 }
@@ -787,7 +787,7 @@ footer hr.divider{
 }
 
 .section-title h2:after {
-	background: #94bc20;
+	background: #478790;
 	content: '';
 	display: block;
 	height: 5px;
@@ -807,12 +807,12 @@ footer hr.divider{
 }
 
 .about-info h5{
-    color: #94bc20;
+    color: #478790;
     font-size: 16px;
 }    
     
 .about-info h2:after{
-   background-color: #94bc20;
+   background-color: #478790;
    content: '';
    display: block;
    height: 3px;
@@ -897,7 +897,7 @@ hr.section-divider{
     
 .panel-title{
     margin-bottom: 20px;
-    border-left: solid 4px #94bc20;
+    border-left: solid 4px #478790;
 }
 
 .panel-title h2{
@@ -945,7 +945,7 @@ hr.divider{
 /* ---------- COUNTER ----------*/
 
 .counter-section{
-    background-color: #70a83b;
+    background-color: #518C86;
     padding: 2rem 0rem 1rem;
     margin-top: -125px;
 }
@@ -1101,7 +1101,7 @@ hr.divider{
 }
       
 .alt-counter-parallax .counter-statistics h4{
-    color: #94bc20;
+    color: #478790;
     margin: 10px 0px 13px;
     font-weight: 500;
 }
@@ -1161,7 +1161,7 @@ hr.divider{
     
 .grid-thumbnail .fas{
     font-size: 2rem;
-    color: #94bc20;
+    color: #478790;
     transition: 0.3s;
 }
     
@@ -1190,7 +1190,7 @@ hr.divider{
 }
     
 .btn-footer{
-    background: #94bc20;
+    background: #478790;
     padding: 15px;
     text-align: center;
     cursor: pointer;
@@ -1331,7 +1331,7 @@ hr.divider{
 .sb-icon-box{
     width: 70px;
     height: 70px;
-    background: #94bc20;
+    background: #478790;
     position: relative;
     float: right;
     margin-top: -40px;
@@ -1378,7 +1378,7 @@ hr.divider{
 .sb-caption a {
     text-decoration: none;
     position: relative;
-    color: #94bc20;
+    color: #478790;
     transition: 0.3s;
 }   
     
@@ -1432,7 +1432,7 @@ hr.divider{
 .section-tittle-alt{
     width: 100%;
     margin-bottom: 20px;
-    border-left: solid 6px #94bc20;
+    border-left: solid 6px #478790;
 }
 
 .section-tittle-alt h2{
@@ -1458,7 +1458,7 @@ hr.divider{
 }
 
 .wide-banner h5{
-    color: #94bc20;
+    color: #478790;
 }
     
 .wide-banner h2{
@@ -1606,7 +1606,7 @@ p.gallery-info{
 .newsletter .button {
   	width: 30%;
   	height: 45px;
-  	background-color: #94bc20;
+  	background-color: #478790;
   	border: none;
   	border-radius: 0 5px 5px 0;
   	font-family: inherit;
@@ -1646,7 +1646,7 @@ svg {
 
 
 .social-bar .social-icon .fab:hover{
-    color: #94bc20;
+    color: #478790;
 }
 
 
@@ -1687,18 +1687,18 @@ svg {
 }
 
 .accordion li a.active{
-    color: #94bc20;
+    color: #478790;
 }
 
 .accordion a.hover{
-    color: #94bc20;
+    color: #478790;
 }
 
 .accordion a:after {
     width: 8px;
     height: 8px;
-    border-right: 1px solid #94bc20;
-    border-bottom: 1px solid #94bc20;
+    border-right: 1px solid #478790;
+    border-bottom: 1px solid #478790;
     position: absolute;
     right: 5px;
     content: " ";
@@ -1743,7 +1743,7 @@ a.active:after {
 }
 
 .content-box:hover .icon-circle{
-    background: #94bc20;
+    background: #478790;
 }
 
 .content-box .icon-circle .fas{
@@ -1777,7 +1777,7 @@ a.active:after {
 .content-box a {
     text-decoration: none;
     position: relative;
-    color: #94bc20;
+    color: #478790;
     transition: 0.3s;
 }
 .content-box a:after {
@@ -1902,7 +1902,7 @@ a.active:after {
     border: none;
     border-radius: 0px;
     margin-bottom: 5px;
-    border-left: solid 6px #94bc20;  
+    border-left: solid 6px #478790;  
     transition: 0.3s ease;
     cursor: pointer;
     color: #333;
@@ -1943,7 +1943,7 @@ a.active:after {
 
 .contenido .list-group-item {
     margin-bottom: 5px;
-    border-left: solid 6px #00873d; 
+    border-left: solid 6px #478790; 
 }
 
 .sidebar-list .active {
@@ -1993,7 +1993,7 @@ a.active:after {
     
 .brochures-files .list-group-item .fas{
     margin-right: 15px;
-    color: #94bc20;
+    color: #478790;
     transition: 0.3s ease;
 }   
     
@@ -2295,7 +2295,7 @@ a.active:after {
     
 .pg-caption h5{
     font-size: 15px;  
-    color: #94bc20;
+    color: #478790;
     font-weight: 400;
 }     
     
@@ -2526,7 +2526,7 @@ a.active:after {
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900; content: "\f044";
     margin-right: 10px;
-    color: #94bc20;
+    color: #478790;
 }
 
 .ab-details .bullets p{
@@ -2571,7 +2571,7 @@ a.active:after {
 }
 
 .social-icon-list a:hover {
-	color: #94bc20;
+	color: #478790;
     text-decoration: none;
 }
 
@@ -2612,7 +2612,7 @@ a.active:after {
 }
 
 .pp-caption h3 a:hover{
-    color: #94bc20;
+    color: #478790;
 }
 
 .pp-caption h4{
@@ -2626,7 +2626,7 @@ a.active:after {
 .pp-caption h4 a{
     text-decoration: none;
     position: relative;
-    color: #94bc20;
+    color: #478790;
     transition: 0.3s;
 }   
 
@@ -2637,7 +2637,7 @@ a.active:after {
 .pp-caption h4::after{
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900; content: "\f061";
-    color: #94bc20;
+    color: #478790;
     margin-left: 10px;
 }
 
@@ -2697,7 +2697,7 @@ hr.post{
 }
 
 .ps-social-icons a:hover {
-	color: #94bc20;
+	color: #478790;
     text-decoration: none;
 }
 
@@ -2730,7 +2730,7 @@ hr.post{
 
 .site-pagination .page-link:hover {
     z-index: 2;
-    color: #94bc20;
+    color: #478790;
     text-decoration: none;
     background-color: #F7FAFA;
     border-color: #F7FAFA;
@@ -2749,8 +2749,8 @@ hr.post{
 .site-pagination .page-item.active .page-link {
   z-index: 1;
   color: #fff;
-  background-color: #94bc20;
-  border-color: #94bc20;
+  background-color: #478790;
+  border-color: #478790;
 }
 
 /*====================================================
@@ -2843,7 +2843,7 @@ hr.post{
 }
 
 .aside-list-group .list-group-item a:hover {
-	color: #94bc20;
+	color: #478790;
     text-decoration: none;
 }
 
@@ -2879,7 +2879,7 @@ h5.mt-0 a {
 }
 
 h5.mt-0 a:hover {
-	color: #94bc20;
+	color: #478790;
     text-decoration: none;
 }
 
@@ -2955,8 +2955,8 @@ blockquote{
     font-size: 15px;
     line-height: 2;
     color: #516163;
-    border-left: 10px solid #94bc20;
-    border-right: 2px solid #94bc20;
+    border-left: 10px solid #478790;
+    border-right: 2px solid #478790;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
     font-family: 'Poppins', sans-serif;
     font-style: italic;
@@ -3040,7 +3040,7 @@ p.comment{
 }
 
 .comment-interaction .fas{
-     color: #94bc20;
+     color: #478790;
     transition: 0.6s;
 }
 
@@ -3136,7 +3136,7 @@ hr.comments{
 }
 
 .btn-comments a {
-	color: #94bc20;
+	color: #478790;
     text-decoration: none;
     transition: 0.6s;
 }
@@ -3194,7 +3194,7 @@ hr.comments{
     right: 0;
     width: 70px;
     height: 70px;
-    background-color: #94bc20;
+    background-color: #478790;
     text-align: center;
     padding: 20px;
 }
@@ -3238,7 +3238,7 @@ hr.comments{
 .bp-caption a {
     text-decoration: none;
     position: relative;
-    color: #94bc20;
+    color: #478790;
     transition: 0.3s;
 }
 .bp-caption a:after {
@@ -3309,7 +3309,7 @@ hr.comments{
     30. CONTACT US #1.
   ====================================================*/
 .contact-info h5{
-    color: #94bc20;
+    color: #478790;
 }
     
 .contact-list{
@@ -3326,7 +3326,7 @@ p.phone::before{
     content: "\f095";
     margin-right: 10px;
     font-size: 18px;
-    color: #94bc20;
+    color: #478790;
 }  
     
 p.mail::before{
@@ -3335,7 +3335,7 @@ p.mail::before{
     content: "\f0e0";
     margin-right: 10px;
     font-size: 18px;
-    color: #94bc20;
+    color: #478790;
 } 
     
 p.address::before{
@@ -3344,7 +3344,7 @@ p.address::before{
     content: "\f041";
     margin-right: 10px;
     font-size: 18px;
-    color: #94bc20;
+    color: #478790;
 }
     
 p.schedule::before{
@@ -3353,7 +3353,7 @@ p.schedule::before{
     content: "\f017";
     margin-right: 10px;
     font-size: 18px;
-    color: #94bc20;
+    color: #478790;
 }  
     
 .map-iframe{
@@ -3447,7 +3447,7 @@ p.schedule::before{
 }
 
 .contact-info h2:after {
-	background-color: #94bc20;
+	background-color: #478790;
 	content: '';
 	display: block;
 	height: 5px;
@@ -3471,7 +3471,7 @@ p.schedule::before{
 
 .contact-icon .fas{
     font-size: 1.3rem;
-    color: #94bc20;
+    color: #478790;
 }
 
 .with-errors{
@@ -3595,8 +3595,8 @@ p.schedule::before{
 
 .alert-success {
   color: #FFF;
-  background-color: #b9e831;
-  border-color: #b9e831;
+  background-color: #518C86;
+  border-color: #518C86;
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
   line-height: 1.5;
@@ -3712,7 +3712,7 @@ p.schedule::before{
 
 .owl-theme .owl-controls .owl-page.active span,
 .owl-theme .owl-controls.clickable .owl-page:hover span{
-    background-color: #94bc20 !important;
+    background-color: #478790 !important;
 }
 
 /*====================================================
@@ -4243,7 +4243,7 @@ img.mfp-img {
   -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
   animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
   background: transparent url(../img/master/play-arrow.png) center center no-repeat;
-  background-color: #94bc20;
+  background-color: #478790;
   position: absolute;
   margin: auto;
   top: 0;
@@ -4300,7 +4300,7 @@ img.mfp-img {
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
-  background: rgba(148, 188, 32) url(../img/master/cd-top-arrow.svg) no-repeat center 50%;
+  background: rgba(71, 135, 144) url(../img/master/cd-top-arrow.svg) no-repeat center 50%;
   visibility: hidden;  
   border-radius: 50%;  
   z-index: 4;
@@ -4324,7 +4324,7 @@ img.mfp-img {
 }
 
 .no-touch .cd-top:hover {
-  background-color: #94bc20;
+  background-color: #478790;
 
 }
 
@@ -4493,7 +4493,7 @@ img.mfp-img {
 
 .carousel-indicators .active {
   opacity: 1;
-    background-color: #b9e831;
+    background-color: #518C86;
 }
 
 .btn-more
@@ -4524,13 +4524,13 @@ img.mfp-img {
   width: 100%;
   opacity: 0.5;
   transition: .5s ease;
-  background-color: #94bc20;
+  background-color: #478790;
   z-index: 1;
 }
 
 .grid-layer:hover .gl-overlay {
   opacity: 0.7;
-  background-color: #94bc20;
+  background-color: #478790;
 }  
     
 .gl-overlay-alt {
@@ -4632,7 +4632,7 @@ img.mfp-img {
 .ha-title{
     width: 100%;
     margin-bottom: 1.5rem;
-    border-left: solid 6px #94bc20;
+    border-left: solid 6px #478790;
 }
 
 .ha-title h5{
@@ -4754,7 +4754,7 @@ p.active{
 }
 
 .hf-title h2:after {
-	background: #94bc20;
+	background: #478790;
 	content: '';
 	display: block;
 	height: 3px;
@@ -4768,7 +4768,7 @@ p.active{
 }
 
 .hf-title h5{
-    color: #94bc20;
+    color: #478790;
 }
 
 .section-thumbnails{
@@ -4804,14 +4804,14 @@ p.active{
 }
 
 .thumbnail-box .caption a:hover {
-	color: #b9e831;
+	color: #518C86;
     text-decoration: none;
 }
 
 .thumbnail-box .caption a {
     text-decoration: none;
     position: relative;
-    color: #94bc20;
+    color: #478790;
     transition: 0.3s;
 }
 .thumbnail-box .caption a:after {
@@ -4851,7 +4851,7 @@ p.active{
   ====================================================*/
 
 .construction-wide-banner{
-    background-color: #70a83b;
+    background-color: #518C86;
     padding: 3rem 3rem 8rem;
     text-align: center;
     margin-top: 0rem;
@@ -4882,7 +4882,7 @@ p.active{
 }  
     
 .thumbnail-box-alt:hover{
-    border-bottom: solid 6px #94bc20;
+    border-bottom: solid 6px #478790;
 }
     
 .tb-image img{
@@ -4918,7 +4918,7 @@ p.active{
 } 
     
 .thumbnail-box-alt:hover h3{
-    color: #94bc20;
+    color: #478790;
 }
     
 .ic-icon{
@@ -4967,7 +4967,7 @@ p.active{
 }
 
 .wide-banner h5{
-    color: #94bc20;
+    color: #478790;
 }
     
 .wide-banner h2{
@@ -5100,7 +5100,7 @@ p.active{
 .content-box .icon-circle{
     width: 70px;
     height: 70px;
-    background: #94bc20;
+    background: #478790;
     border-radius: 50%;
     position: relative;
     margin: auto auto 20px;
@@ -5187,7 +5187,7 @@ p.active{
     
 .panel-title{
     margin-bottom: 20px;
-    border-left: solid 6px #94bc20;
+    border-left: solid 6px #478790;
 }
 
 .panel-title h2{
@@ -5217,7 +5217,7 @@ hr.divider-alt{
 }
     
 .sp-counter .counter-statistics .counter{
-    color: #94bc20;
+    color: #478790;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 0px;
     font-weight: 500;
@@ -5237,7 +5237,7 @@ hr.divider-alt{
 
 .testimonials-section{
     position: relative;
-    background-color: #94bc20;
+    background-color: #478790;
     padding: 25px 0px 0px;
     margin-top: -150px;
     z-index: 1;
@@ -5255,7 +5255,7 @@ hr.divider-alt{
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: linear-gradient(to bottom right, #94bc20, #94bc20);
+    background-image: linear-gradient(to bottom right, #478790, #478790);
     opacity: 0.9;
 }
     
@@ -5402,12 +5402,12 @@ hr.divider-alt{
   transition: 0.3s;
   padding: 0.3rem 1.125rem;
   font-size: 0.60rem;      
-  background: #94bc20;
-  border: solid 2px #94bc20;
+  background: #478790;
+  border: solid 2px #478790;
 }
 
 .shadow-pricing-table .btn-custom:hover {
-  color: #94bc20;
+  color: #478790;
   background: #FFF; 
 }
 
@@ -5486,7 +5486,7 @@ hr.divider-alt{
     font-size: 16px;
     text-transform: none;
     margin-top: 20px;
-    color: #94bc20;
+    color: #478790;
 }
     
 .ggt-caption h5::after{
@@ -5494,11 +5494,11 @@ hr.divider-alt{
     font-weight: 900; 
     content: "\f101";
     margin-left: 10px;
-    color: #94bc20;
+    color: #478790;
 }
     
 .ggt-caption h5 a {
-	color: #94bc20;
+	color: #478790;
     text-decoration: none;
     transition: 0.3s;
 }
@@ -5538,13 +5538,13 @@ hr.divider-alt{
   width: 100%;
   opacity: 0.5;
   transition: .5s ease;
-  background-color: #94bc20;
+  background-color: #478790;
   z-index: 1;
 }
 
 .grid-layer:hover .gl-overlay {
   opacity: 0.7;
-  background-color: #94bc20;
+  background-color: #478790;
 }  
     
 .gl-overlay-alt {
@@ -5595,8 +5595,8 @@ hr.divider-alt{
   transition: 0.9s;
   padding: 0.25rem 0.94rem;
   font-size: 0.60rem;      
-  background: #94bc20;
-  border: solid 2px #94bc20;
+  background: #478790;
+  border: solid 2px #478790;
   font-size: 13px;
   border-radius: 0px;
 }
@@ -5710,7 +5710,7 @@ hr.divider-alt{
 }  
     
 .fc-content h5{
-    color: #94bc20;
+    color: #478790;
 }  
     
 .fc-content h2{
@@ -5742,7 +5742,7 @@ hr.divider-alt{
     font-weight: 900; 
     content: "\f560";
     margin-right: 10px;
-    color: #94bc20;
+    color: #478790;
 }
     
 .fc-left-align{
@@ -5795,7 +5795,7 @@ hr.divider-alt{
 }
 
 .project-grid-bg .filter-container .filter li.active{
-    background-color: #94bc20;
+    background-color: #478790;
     border-radius: 5px;
     padding: 0px 20px;
 }
@@ -5811,7 +5811,7 @@ hr.divider-alt{
 .og-section-tittle{
     width: 100%;
     margin-bottom: 1.5rem;
-    border-left: solid 6px #94bc20;
+    border-left: solid 6px #478790;
 }
       
 .og-section-tittle h5{
@@ -5870,18 +5870,18 @@ hr.divider-alt{
 }
 
 .og-accordion .accordion li a.active{
-    color: #94bc20;
+    color: #478790;
 }
 
 .og-accordion .accordion a.hover{
-    color: #94bc20;
+    color: #478790;
 }
 
 .og-accordion .accordion a:after {
     width: 8px;
     height: 8px;
-    border-right: 2px solid #94bc20;
-    border-bottom: 2px solid #94bc20;
+    border-right: 2px solid #478790;
+    border-bottom: 2px solid #478790;
     position: absolute;
     right: 5px;
     content: " ";
@@ -5897,8 +5897,8 @@ hr.divider-alt{
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-    border-right: 1px solid #94bc20;
-    border-bottom: 1px solid #94bc20;
+    border-right: 1px solid #478790;
+    border-bottom: 1px solid #478790;
 }
 
 .og-accordion .accordion .last-item{
@@ -6006,7 +6006,7 @@ hr.divider-alt{
 .sa-tittle{
     width: 100%;
     margin-bottom: 20px;
-    border-left: solid 6px #94bc20;
+    border-left: solid 6px #478790;
 }
 
 .sa-tittle h5{
@@ -6044,7 +6044,7 @@ hr.divider-alt{
     width: 100%;
     margin-bottom: 20px;
     padding-right: 20px;
-    border-right: solid 6px #94bc20;
+    border-right: solid 6px #478790;
 }
     
 .mision-tittle h5{
@@ -6075,7 +6075,7 @@ hr.divider-alt{
 .vision-tittle{
     width: 100%;
     margin-bottom: 20px;
-    border-left: solid 6px #94bc20;
+    border-left: solid 6px #478790;
 }
     
 .vision-tittle h5{
@@ -6102,7 +6102,7 @@ hr.divider-alt{
      font-weight: 900; 
      content: "\f00c";
      margin-right: 10px;
-     color: #94bc20;
+     color: #478790;
 }
 
 .project-alt .filter-container{
@@ -6114,7 +6114,7 @@ hr.divider-alt{
 }
 
 .project-alt .filter-container .filter li.active{
-    background-color: #94bc20;
+    background-color: #478790;
     border-radius: 5px;
     padding: 0px 20px;
     color: #FFF;

@@ -24,15 +24,15 @@
 
           <div class="sidebar-list">                
               <div class="list-group">
-                <a  class="list-group-item d-flex justify-content-between align-items-center" (click)="showDocumets('vigente')" [ngClass]="{ active: conv == 1}">
+                <a  class="list-group-item d-flex justify-content-between align-items-center" (click)="showDocumets('Vigente')" [ngClass]="{ active: conv == 1}">
                   Convocatorias Vigentes
                   <span class="badge"><i class="fas fa-chevron-right"></i></span>
                 </a>
-                <a  class="list-group-item d-flex justify-content-between align-items-center" (click)="showDocumets('adjudicado')" [ngClass]="{ active: conv == 2}">
+                <a  class="list-group-item d-flex justify-content-between align-items-center" (click)="showDocumets('Adjudicado')" [ngClass]="{ active: conv == 2}">
                   Convocatorias Adjudicados
                   <span class="badge"><i class="fas fa-chevron-right"></i></span>
                 </a>
-                <a  class="list-group-item d-flex justify-content-between align-items-center" (click)="showDocumets('desierto')" [ngClass]="{ active: conv ==  3}" >
+                <a  class="list-group-item d-flex justify-content-between align-items-center" (click)="showDocumets('Desierto')" [ngClass]="{ active: conv ==  3}" >
                   Convocatorias desiertos
                   <span class="badge"><i class="fas fa-chevron-right"></i></span>
                 </a>
@@ -57,7 +57,7 @@
           </div>
 
           <div data-view="list-view" class="download-cards"  >
-              <article class="download-card" *ngFor="let doc of documents | docsFilter: filterDoc">
+              <article class="download-card" *ngFor="let doc of documents | docsFilter: filterDoc : title">
                 <div class="download-card__icon-box">
                     <!-- <img src="../assets/img/download.svg"  width="100px" /> -->
                   <div class="download-dates" >

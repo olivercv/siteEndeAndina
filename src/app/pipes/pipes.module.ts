@@ -6,6 +6,7 @@ import { ObjectFilterPipe } from './object-filter.pipe';
 import { FormatDatePipe } from './format-date.pipe';
 import { DocsFilterPipe } from './docs-filter.pipe';
 import { FilePipe } from './file.pipe';
+import { ConvFilterPipe } from './conv-filter.pipe';
 
 @NgModule({
   imports: [],
@@ -16,7 +17,8 @@ import { FilePipe } from './file.pipe';
     ObjectFilterPipe,
     FormatDatePipe,
     DocsFilterPipe,
-    FilePipe
+    FilePipe,
+    ConvFilterPipe
   ],
   exports: [
     ImagePipe,
@@ -25,7 +27,8 @@ import { FilePipe } from './file.pipe';
     ObjectFilterPipe,
     FormatDatePipe,
     DocsFilterPipe,
-    FilePipe
+    FilePipe,
+    ConvFilterPipe
   ]
 })
 export class PipesModule { }

@@ -879,22 +879,15 @@ export class ConvocatoriasService {
   //  }
 
 
-  
+  // getDocuments(fl: string) {
 
-  // getDocuments( to: number = 0 ) {
-  //   const url = this.uri + '/doc/web';
-  //   console.log('ruta', url);
-  //   return this.http.get<IDocs>( url ).pipe(
-  //       map( results => {
-  //         console.log('resultado ', results);
-  //         this.total = results.total;
-  //       //   results.documents.sort((a, b) => {
-  //       //     return a.fecha_invitacion > b.fecha_invitacion ? -1 : 1;
-  //       //  });
-  //         return results.docs;
-  //       })
-  //   );
+  //   return this.data.filter( object => {
+  //       return object['type'] == fl;
+  //   });
+
   // }
+
+
 
   getConvocatories() {
     const url = this.uri + '/convocatory/web';
